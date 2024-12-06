@@ -51,4 +51,30 @@
     <servlet-name>loginCheckServlet</servlet-name>
     <url-pattern>/loginCheckServlet.do</url-pattern>
   </servlet-mapping>
+  <!-- 에러 처리 코드 -->
+  <error-page>
+  <error-code>404</error-code>
+  <location>/error/error404.jsp</location>
+  </error-page>
+  <error-page>
+  <error-code>500</error-code>
+  <location>/error/error500.jsp</location>
+  </error-page>
 </web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

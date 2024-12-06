@@ -30,3 +30,6 @@
 0:0:0:0:0:0:0:1 - - [06/Dec/2024:16:31:40 +0900] "GET /jspStudy/directive/include_top_bottom2.jsp HTTP/1.1" 200 284
 0:0:0:0:0:0:0:1 - - [06/Dec/2024:16:34:34 +0900] "GET /jspStudy/directive/errorinvoke.jsp?name=%EB%82%98%EC%A2%85%ED%98%B8 HTTP/1.1" 200 262
 0:0:0:0:0:0:0:1 - - [06/Dec/2024:16:35:07 +0900] "GET /jspStudy/directive/errorinvoke.jsp HTTP/1.1" 200 700
+127.0.0.1 - - [06/Dec/2024:16:39:12 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [06/Dec/2024:16:51:20 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [06/Dec/2024:16:51:48 +0900] "GET /jspStudy/implicit/request_info.jsp HTTP/1.1" 200 649

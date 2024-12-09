@@ -1,0 +1,5 @@
+package co.kh.dev352.signup;
+
+public class SignupVO {
+
+}

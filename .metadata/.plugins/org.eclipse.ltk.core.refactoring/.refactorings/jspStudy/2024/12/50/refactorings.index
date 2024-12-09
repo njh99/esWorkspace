@@ -1,0 +1,12 @@
+1733704798183	Move 'login.css' to 'css'
+1733704875725	Move 'login.jsp' to 'signup'
+1733704877122	Move 'loginCheck.jsp' to 'signup'
+1733704878376	Move 'logout.jsp' to 'signup'
+1733704879586	Move 'signup.css' to 'signup'
+1733704880780	Move 'signup.jsp' to 'signup'
+1733704882746	Move 'success.jsp' to 'signup'
+1733704890688	Delete element
+1733705095193	Move 'signup.css' to 'css'
+1733707709142	Rename package 'co.kh.dev352.signup'
+1733707814105	Rename type 'AccountDAO'
+1733708768918	Rename type 'signupDAO'

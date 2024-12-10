@@ -85,3 +85,15 @@
 0:0:0:0:0:0:0:1 - - [10/Dec/2024:12:37:56 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 1638
 0:0:0:0:0:0:0:1 - - [10/Dec/2024:12:38:14 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 1638
 0:0:0:0:0:0:0:1 - - [10/Dec/2024:12:38:57 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 1873
+127.0.0.1 - - [10/Dec/2024:15:21:09 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:15:21:16 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 1873
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:15:21:16 +0900] "GET /jspStudy/jdbc/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [10/Dec/2024:15:39:08 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [10/Dec/2024:15:48:33 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [10/Dec/2024:16:04:51 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:16:05:02 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 936
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:16:05:02 +0900] "GET /jspStudy/jdbc/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:16:06:24 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 936
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:16:06:27 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 936
+127.0.0.1 - - [10/Dec/2024:16:06:39 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:16:06:43 +0900] "GET /jspStudy/jdbc/usingJDBC.jsp HTTP/1.1" 200 1873

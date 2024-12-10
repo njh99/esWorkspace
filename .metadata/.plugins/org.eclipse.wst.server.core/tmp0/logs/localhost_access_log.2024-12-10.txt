@@ -1,0 +1,9 @@
+127.0.0.1 - - [10/Dec/2024:09:44:25 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:44:39 +0900] "GET /jspStudy/forward/select.jsp HTTP/1.1" 200 453
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:44:39 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:44:44 +0900] "GET /jspStudy/forward/view.jsp?code=A HTTP/1.1" 200 284
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:46:21 +0900] "GET /jspStudy/forward/view.jsp?code=A HTTP/1.1" 200 284
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:46:27 +0900] "GET /jspStudy/forward/view.jsp?code=B HTTP/1.1" 200 284
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:46:30 +0900] "GET /jspStudy/forward/view.jsp?code=C HTTP/1.1" 200 284
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:47:48 +0900] "GET /jspStudy/forward/view.jsp?code=C HTTP/1.1" 200 191
+0:0:0:0:0:0:0:1 - - [10/Dec/2024:09:47:50 +0900] "GET /jspStudy/forward/view.jsp?code=A HTTP/1.1" 200 191

@@ -1,0 +1,73 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Form</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+ <script language="javascript" src="loginscript.js"></script>
+ <script>
+
+    </script>
+</head>
+<body >
+<main>
+	<form method="post" action="regProc.jsp" name="regForm">
+		<table border="1">
+			<tr>
+				<td colspan="2" align="center">회원 가입 입력</td>
+			</tr>
+			<tr>
+				<td align="center">아이디 :</td>
+				<td><input type="text" name="id" /> 
+				<input type="button" value="중복확인" onClick="idCheck()" /><span></span></td>
+			</tr>
+			<tr>
+				<td align="center">패스워드 :</td>
+				<td><input type="password" name="pwd" /><p></p></td>
+			</tr>
+			<tr>
+				<td align="center">패스워드 확인:</td>
+				<td><input type="password" name="pwd2" /><p></p></td>
+			</tr>
+			<tr>
+				<td align="center">이름 :</td>
+				<td><input type="text" name="name" /><p></p></td>
+			</tr>
+			<tr>
+				<td align="center">전화번호 :</td>
+				<td><select name="phone1">
+						<option value="010">010</option>
+				</select> - <input type="text" name="phone2" size="5" /> - <input
+					type="text" name="phone3" size="5" /></td>
+			</tr>
+			<tr>
+				<td align="center">이메일 :</td>
+				<td><input type="text" name="email" /><span></span></td>
+			</tr>
+			<tr>
+				<td align="center">생년월일</td>
+				<td><input type="date" name="birthday" id="birthday"><span></span></td>
+			</tr>
+			<tr>
+				<td align="center">우편번호 :</td>
+				<td><input type="text" name="zipcode" /><span></span> 
+				<input type="button" value="찾기" onClick="zipCheck()" /></td>
+			</tr>
+			<tr>
+				<td align="center">주소 :</td>
+				<td><input type="text" name="address1" size="50" /><span></span></td>
+			</tr>
+			<tr>
+				<td align="center">상세주소 :</td>
+				<td><input type="text" name="address2" size="30" /><span></span></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="button" value="회원가입" onclick="inputCheck()" />&nbsp;&nbsp;
+				<input type="reset" value="다시입력" /></td>
+			</tr>
+		</table>
+	</form>
+	</main>
+</body>
+</html>

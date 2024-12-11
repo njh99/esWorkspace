@@ -18,3 +18,28 @@
 1733791662487	Move 'viewModule' to 'forward'
 1733799720566	Copy compilation unit
 1733799744168	Rename type 'SignupDAO'
+1733877752034	Copy file
+1733878201662	Copy file
+1733882732410	Move compilation unit
+1733882741282	Rename type 'TempMEmberDAO'
+1733887206774	Copy file
+1733894569197	Delete element
+1733894580417	Rename resource 'zipCheck2.jsp'
+1733897111556	Copy file
+1733897161614	Copy file
+1733899219591	Delete element
+1733899222023	Delete element
+1733899224513	Delete element
+1733899227089	Delete element
+1733899232907	Move 'idCheck.jsp' to 'mylogin'
+1733899242057	Move 'regForm.jsp' to 'mylogin'
+1733899245750	Move 'idCheck.jsp' to 'memberone'
+1733899248170	Move 'regForm.jsp' to 'memberone'
+1733899283197	Copy folder
+1733899463535	Copy compilation unit
+1733899470929	Copy compilation unit
+1733899477994	Copy compilation unit
+1733899505000	Move file
+1733901118588	Rename resource 'script.js'
+1733902271468	Rename type 'StudentVO'
+1733902371476	Rename type 'StudentDAO'

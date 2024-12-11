@@ -1,0 +1,11 @@
+function idCheck(id) {
+	let value = document.regForm.id.value;
+	if (value === "") {
+		alert("아이디를 입력해 주세요.");
+		document.regForm.id.focus();
+	} else {
+		
+		url = "idCheck.jsp?id=" + value;
+		window.open(url, "get", "width=300,height=150");
+	}
+}

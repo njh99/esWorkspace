@@ -1,11 +1,11 @@
 <%@page import="java.util.ArrayList"%>
-<%@page import="co.kh.dev.tempmember.model.TempMEmberDAO"%>
+<%@page import="co.kh.dev.memberone.model.StudentDAO"%>
 <%@page import="co.kh.dev.tempmember.model.TempMemberVO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1. 사용자정보를 가져온다  -->
 <!-- 2. CURD -->
 <%
-TempMEmberDAO tmdao = new TempMEmberDAO();
+StudentDAO tmdao = new StudentDAO();
 ArrayList<TempMemberVO> templist = tmdao.selectDB(); // DB에서 사용자 목록 가져오기
 int counter = 0;
 %>

@@ -1,0 +1,26 @@
+package co.kh.dev.memberone.model;
+
+public class StudentVO {
+	
+		 private String id;
+		 private String pass;
+		 private String name;
+		 private String phone1;
+		 private String phone2;
+		 private String phone3;
+		 private String email;
+		 private String zipcode;
+		 private String address1;
+		 private String address2;
+		 public String getId() {
+		 return id;
+		 }
+		 public void setId(String id) {
+		 this.id = id;
+		 }
+		 public String getPass() {
+		 return pass;
+		 }
+		 public void setPass(String pass) {
+		 this.pass = pass;
+}

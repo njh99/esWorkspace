@@ -43,3 +43,11 @@
 1733901118588	Rename resource 'script.js'
 1733902271468	Rename type 'StudentVO'
 1733902371476	Rename type 'StudentDAO'
+1733965673806	Copy file
+1733965690251	Rename resource 'loginscript.js'
+1733978423350	Move 'mainhomepage.js' to 'makelogin'
+1733978438051	Move 'css' to 'makelogin'
+1733978440308	Move 'main' to 'makelogin'
+1733978627046	Move 'mainhomepage.html' to 'makelogin'
+1733978634409	Delete element
+1733978676447	Move 'mainhomepage.css' to 'makelogin'

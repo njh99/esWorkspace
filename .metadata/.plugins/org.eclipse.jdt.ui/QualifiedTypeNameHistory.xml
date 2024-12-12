@@ -9,4 +9,8 @@
     <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="co.kh.dev352.common.DBUtility"/>
+    <fullyQualifiedTypeName name="co.kh.dev.memberone.model.ZipCodeVO"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.MakeLoginVO"/>
+    <fullyQualifiedTypeName name="co.kh.dev.memberone.model.StudentVO"/>
 </qualifiedTypeNameHistroy>

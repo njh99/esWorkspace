@@ -1,20 +1,25 @@
 @charset "UTF-8";
 
+/* 헤더 */
 
+
+/* 회원 가입 부분*/
 BODY {
 	FONT-SIZE: 9pt;
 	COLOR: black;
 	LINE-HEIGHT: 160%;
 	background-color: white;
 }
-button{
+
+button {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
-main{
+
+main {
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
@@ -23,32 +28,29 @@ main{
 	justify-content: center;
 	align-items: center;
 }
+
 TD {
 	FONT-SIZE: 9pt;
 	COLOR: black;
 	LINE-HEIGHT: 160%;
-
 }
 
 SELECT {
 	FONT-SIZE: 9pt;
 	COLOR: black;
 	LINE-HEIGHT: 160%;
-
 }
 
 DIV {
 	FONT-SIZE: 9pt;
 	COLOR: black;
 	LINE-HEIGHT: 160%;
-	
 }
 
 FORM {
 	FONT-SIZE: 9pt;
 	COLOR: black;
 	LINE-HEIGHT: 160%;
-	
 }
 
 TEXTAREA {
@@ -58,7 +60,6 @@ TEXTAREA {
 	BORDER-LEFT: 1px solid #999999;
 	COLOR: BLACK;
 	BORDER-BOTTOM: 1px solid #999999;
-	
 	BACKGROUND-COLOR: white
 }
 
@@ -69,7 +70,6 @@ INPUT {
 	BORDER-LEFT: 1px solid #999999;
 	COLOR: BLACK;
 	BORDER-BOTTOM: 1px solid #999999;
-
 	BACKGROUND-COLOR: white
 }
 

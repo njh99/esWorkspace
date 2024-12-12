@@ -11,6 +11,21 @@ html {
   font-size: 12px;
 }
 
+
+header nav.nav_naver{
+	height: 30px;
+	font-size: 15px;
+	padding:  5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid black;
+	background-color: red;
+}
+
+
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   background-color: #f9f9f9;
@@ -43,15 +58,21 @@ div.nav_futlogo a:hover {
 /* header 부분 */
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   height: auto;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	
+	
+	border-bottom: 1px solid black;
+	
 }
+
 
 .header-logo {
   font-size: 1.5rem;

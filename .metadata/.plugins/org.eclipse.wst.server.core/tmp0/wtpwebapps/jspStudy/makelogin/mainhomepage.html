@@ -5,15 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>메인페이지</title>
+  <script src="script.js?timestamp=<%= System.currentTimeMillis() %>"></script>
   <link rel="stylesheet" href="mainhomepage.css" />
   <script src="mainhomepage.js"></script>
   <script src="https://kit.fontawesome.com/01ba7af47f.js" crossorigin="anonymous"></script>
-  <script src="script.js?timestamp=<%= System.currentTimeMillis() %>"></script>
 </head>
 
 <body>
   <!-- 헤더 부분 -->
   <header>
+  	<nav class="nav_naver">
+            <div class="nav_naver_font">
+                <a class="naver_logo" href="#"><i class="fa-sharp fa-solid fa-n"></i></a>
+                <a class="sport_logo" href="#">WELCOME</a>
+            </div>
+
+            <ul class="nav_icon">
+                <li><a href="#">Login</a></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+   <nav>
     <div class="header-logo">
       <i class="fa-solid fa-futbol"></i>
       <a href="#">KICK OFF</a>
@@ -61,7 +73,7 @@
         <a href="/html/signup/signup.html" target="_blank">시작하기</a>
       </li>
     </ul>
-
+	</nav>
 
   </header>
 

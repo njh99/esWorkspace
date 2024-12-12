@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.MakeLoginVO"/>
     <fullyQualifiedTypeName name="co.kh.dev.memberone.model.StudentVO"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
 </qualifiedTypeNameHistroy>

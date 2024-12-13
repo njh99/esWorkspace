@@ -30,14 +30,96 @@ public class BoardDAO {
 	}
 	
 	private final String SELECT_SQL = "SELECT * FROM STUDENT";
+	private final String SELECT_MAX_NUM_SQL = "select max(num)as NUM from board";
 	private final String SELECT_ONE_SQL = "SELECT *  FROM STUDENT WHERE ID = ?";
 	private final String SELECT_BY_ID_SQL = "SELECT COUNT(*) AS COUNT FROM STUDENT WHERE ID = ?";
 	private final String SELECT_LOGIN_SQL = "SELECT PASS FROM STUDENT WHERE ID = ?";
-	private final String INSERT_SQL = "insert into student values(?,?,?,?,?,?,?,?,?,?)";
+	private final String INSERT_SQL =  "insert into board(num, writer, email, subject, pass, "
+			+ "regdate, ref, step, depth, content, ip)values(board_seq.nextval,?,?,?,?,?,?,?,?,?,?)";
 	private final String DELETE_SQL = "DELETE FROM STUDENT WHERE ID = ?";
 	private final String UPDATE_SQL = "update student set pass=?, phone1=?, phone2=?, phone3=?, email=?, zipcode=?, address1=?, address2=? where id=?";
+	private final String UPDATE_STEP_SQL = "update board set step=step+1 where ref= ? and step> ?";
 	private final String SELECT_ZIP_SQL = "select * from zipcode where dong like ?";
 
+	public Boolean insertDB(BoardVO vo) {
+		ConnectionPool cp = ConnectionPool.getInstance();
+		Connection con = cp.dbCon();
+		PreparedStatement pstmt = null;
+		
+		//현재 보드속에 가장 최고값 +1 , 없으면 1
+		ResultSet rs = null;
+		int count = 0;
+		int number =0;
+		int step = 0;
+		int depth = 0;
+		int ref = 1;
+		try {
+			pstmt = con.prepareStatement("SELECT_MAX_NUM_SQL");
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				//가장최고값 +1
+				number = rs.getInt("NUM") + 1;
+			} else {
+				//가장 최근 값이 없으면 1로 세팅
+				number = 1;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		 
+		 //getNum() 0 이면 새글 , 0 아니면 답변글
+		try {
+		 if ( vo.getNum() != 0) {//답변글일경우
+			    pstmt = con.prepareStatement(UPDATE_STEP_SQL);
+				pstmt.setInt(1, vo.getRef());
+				pstmt.setInt(2, vo.getStep());
+				pstmt.executeUpdate();
+				ref= vo.getRef();
+				step = vo.getStep() + 1;
+				depth = vo.getDepth() + 1;
+			 } else {//새 글일 경우
+				 ref = number;  //가장 최고값  +1
+				 step = 0;
+				 depth = 0;
+			 }// 쿼리를 작성
+				
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+			  
+		
+		//게시판 글 등록
+		try {
+			pstmt = con.prepareStatement(INSERT_SQL);
+			pstmt.setString(1, vo.getWriter());
+			pstmt.setString(2, vo.getEmail());
+			pstmt.setString(3, vo.getSubject());
+			pstmt.setString(4, vo.getPass());
+			pstmt.setTimestamp(5, vo.getRegdate());
+			pstmt.setInt(6, ref);
+			pstmt.setInt(7, step);
+			pstmt.setInt(8, depth);
+			pstmt.setString(9, vo.getContent());
+			pstmt.setString(10, vo.getIp());
+			count = pstmt.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			cp.dbClose(con, pstmt);
+		}
+		return (count > 0) ? true : false;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	// 전체를 DB에서 출력
 	public ArrayList<StudentVO> selectDB() {

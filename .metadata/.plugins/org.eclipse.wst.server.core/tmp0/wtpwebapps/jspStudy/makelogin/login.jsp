@@ -150,29 +150,7 @@ div.dropdown-content a {
 	rel="stylesheet">
 </head>
 <body>
-<header>
-		<nav>
-			<div class="nav_futlogo">
-				<a href="#"><i class="fa-solid fa-futbol"></i></a> <a href="#">메인메뉴</a>
-			</div>
-			<div>
-				<ul class="nav_menu">
-					<li><a href="#"><img src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"alt="laliga" class="la"><br><span>LALIGA</span></a></li>
-					<li><a href="#"><img src="./media/pl-main-logo.png"alt="laliga" class="epl"></i><br><span>EPL</span></i></a></li>
-					<li><a href="#"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"><br><span>BUNDES</span></a></li>
-					<li><a href="#"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"></i><br><span>SERIE</span></a></li>
-				</ul>
-			</div>
 
-
-			<ul class="nav_icon">
-				<li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
-				<li><a href="#"><i class="fa-solid fa-question"></i></a></li>
-				<li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-			</ul>
-		</nav>
-
-	</header>
 	<main>
 		<form method="post" action="#">
 			<table width="300" border="1">

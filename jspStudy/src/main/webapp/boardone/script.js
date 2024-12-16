@@ -1,4 +1,4 @@
-//패턴 검색해야함
+/*패턴검색을 진행할것*/
 function writeSave() {
 	if (document.writeForm.writer.value == "") {
 		alert("작성자를 입력하십시요.");
@@ -10,6 +10,7 @@ function writeSave() {
 		document.writeForm.subject.focus();
 		return false;
 	}
+
 	if (document.writeForm.content.value == "") {
 		alert("내용을 입력하십시요.");
 		document.writeForm.content.focus();
@@ -21,5 +22,13 @@ function writeSave() {
 		document.writeForm.pass.focus();
 		return false;
 	}
- return true;	
-} 
+	return true;
+}
+/*삭제 패턴검색을 진행할것*/
+function deleteSave() {
+	if (document.delForm.pass.value == '') {
+		alert("비밀번호를 입력하십시요.");
+		document.delForm.pass.focus();
+		return false;
+	}
+}

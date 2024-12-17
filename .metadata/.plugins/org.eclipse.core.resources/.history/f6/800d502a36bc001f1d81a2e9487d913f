@@ -1,0 +1,22 @@
+<%@page import="co.kh.dev.actiontag.model.Customer"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+	//2. CURD
+	Customer customer = new Customer();
+	customer.setName("njh");
+	customer.setEmail("hell@naver.com");
+	customer.setPhone("010-1111-0000");
+	request.setAttribute("customer",customer );
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EL Example</title>
+</head>
+<body>
+	<ul>
+		<li><%= (Customer)request.getAttribute("customer") %></li>
+	</ul>
+</body>
+</html>

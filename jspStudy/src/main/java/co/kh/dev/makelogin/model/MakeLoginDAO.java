@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import co.kh.dev.makelogin.model.MakeLoginVO;
 import co.kh.dev.tempmember.model.TempMemberVO;
 import co.kh.dev352.common.ConnectionPool;
 import co.kh.dev352.common.DBUtility;
@@ -14,7 +15,7 @@ import co.kh.dev352.common.DBUtility;
 public class MakeLoginDAO {
 	private final String SELECT_SQL = "SELECT * FROM makelogin";
 	private final String SELECT_BY_ID_SQL = "SELECT COUNT(*) AS COUNT FROM makelogin WHERE ID = ?";
-	private final String SELECT_LOGIN_CHECK_SQL = "SELECT * FROM makelogin WHERE ID = ? AND PWD = ?";
+	private final String SELECT_LOGIN__SQL = "SELECT PASS FROM makelogin WHERE ID = ?";
 	private final String INSERT_SQL = "insert into makelogin values(?,?,?,?,?,?,?,?,?,?,?)";
 	private final String DELETE_SQL = "DELETE FROM makelogin WHERE ID = ?";
 	private final String UPDATE_SQL = "UPDATE makelogin SET  PWD = ?, EMAIL = ? , NAME = ?, BIRTH = ? WHERE ID = ?";
@@ -53,7 +54,7 @@ public class MakeLoginDAO {
 	}
 
 	// id체크
-	public boolean selectIdCheck(MakeLoginVO svo) {
+	public boolean selectIdCheck(MakeLoginVO mvo) {
 		ConnectionPool cp = ConnectionPool.getInstance();
 		Connection con = cp.dbCon();
 		PreparedStatement pstmt = null;
@@ -61,7 +62,7 @@ public class MakeLoginDAO {
 		int count = 0;
 		try {
 			pstmt = con.prepareStatement(SELECT_BY_ID_SQL);
-			pstmt.setString(1, svo.getId());
+			pstmt.setString(1, mvo.getId());
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
 				count = rs.getInt("COUNT");
@@ -105,24 +106,24 @@ public class MakeLoginDAO {
 		return zipList;
 	}
 
-	public Boolean insertDB(MakeLoginVO svo) {
+	public Boolean insertDB(MakeLoginVO mvo) {
 		ConnectionPool cp = ConnectionPool.getInstance();
 		Connection con = cp.dbCon();
 		PreparedStatement pstmt = null;
 		int count = 0;
 		try {
 			pstmt = con.prepareStatement(INSERT_SQL);
-			pstmt.setString(1, svo.getId());
-			pstmt.setString(2, svo.getPass());
-			pstmt.setString(3, svo.getName());
-			pstmt.setString(4, svo.getPhone1());
-			pstmt.setString(5, svo.getPhone2());
-			pstmt.setString(6, svo.getPhone3());
-			pstmt.setDate(7, svo.getBirthday());
-			pstmt.setString(8, svo.getEmail());
-			pstmt.setString(9, svo.getZipcode());
-			pstmt.setString(10, svo.getAddress1());
-			pstmt.setString(11, svo.getAddress2());
+			pstmt.setString(1, mvo.getId());
+			pstmt.setString(2, mvo.getPass());
+			pstmt.setString(3, mvo.getName());
+			pstmt.setString(4, mvo.getPhone1());
+			pstmt.setString(5, mvo.getPhone2());
+			pstmt.setString(6, mvo.getPhone3());
+			pstmt.setDate(7, mvo.getBirthday());
+			pstmt.setString(8, mvo.getEmail());
+			pstmt.setString(9, mvo.getZipcode());
+			pstmt.setString(10, mvo.getAddress1());
+			pstmt.setString(11, mvo.getAddress2());
 			count = pstmt.executeUpdate();
 			
 		} catch (SQLException e) {
@@ -132,4 +133,108 @@ public class MakeLoginDAO {
 		}
 		return (count > 0) ? true : false;
 	}
-}
+	// 로그인 체크
+		public int selectLoginCheck(MakeLoginVO mvo) {
+			ConnectionPool cp = ConnectionPool.getInstance();
+			Connection con = cp.dbCon();
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			String pass = null;
+			int check = -1;
+			try {
+				pstmt = con.prepareStatement(SELECT_LOGIN__SQL);
+				pstmt.setString(1, mvo.getId());
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					pass = rs.getString("PASS");
+					check = (pass.equals(mvo.getPass()) == true) ? (1) : (0);
+
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				cp.dbClose(con, pstmt, rs);
+			}
+			return check;
+		}
+
+		// 수정
+		public MakeLoginVO selectOneDB(MakeLoginVO mvo) {
+			ConnectionPool cp = ConnectionPool.getInstance();
+			Connection con = cp.dbCon();
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			MakeLoginVO resultVO = null;
+			try {
+				pstmt = con.prepareStatement(SELECT_ONE_SQL);
+				pstmt.setString(1, mvo.getId());
+				rs = pstmt.executeQuery();
+				while (rs.next()) {
+					String id = rs.getString("id");
+					String pass = rs.getString("pass");
+					String name = rs.getString("name");
+					String phone1 = rs.getString("phone1");
+					String phone2 = rs.getString("phone2");
+					String phone3 = rs.getString("phone3");
+					String email = rs.getString("email");
+					String zipcode = rs.getString("zipcode");
+					String Address1 = rs.getString("Address1");
+					String Address2 = rs.getString("Address2");
+					resultVO = new MakeLoginVO(id, pass, name, phone1, phone2, phone3, email, zipcode, Address1, Address2);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				cp.dbClose(con, pstmt, rs);
+			}
+			return resultVO;
+		}
+		
+		//정보 수정해서 db로 보내기
+		public Boolean updateDB(MakeLoginVO mvo) {
+			ConnectionPool cp = ConnectionPool.getInstance();
+			Connection con = cp.dbCon();
+			PreparedStatement pstmt = null;
+			int count = 0;
+			try {
+				pstmt = con.prepareStatement(UPDATE_SQL);
+				pstmt.setString(1, mvo.getPass());
+				pstmt.setString(2, mvo.getPhone1());
+				pstmt.setString(3, mvo.getPhone2());
+				pstmt.setString(4, mvo.getPhone3());
+				pstmt.setString(5, mvo.getEmail());
+				pstmt.setString(6, mvo.getZipcode());
+				pstmt.setString(7, mvo.getAddress1());
+				pstmt.setString(8, mvo.getAddress2());
+				pstmt.setString(9, mvo.getId());
+				count = pstmt.executeUpdate();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				cp.dbClose(con, pstmt);
+			}
+			return (count > 0) ? true : false;
+		}
+
+		//회원 정보 삭제
+		public Boolean deleteDB(MakeLoginVO mvo) {
+			ConnectionPool cp = ConnectionPool.getInstance();
+			Connection con = cp.dbCon();
+			PreparedStatement pstmt = null;
+			int count = 0;
+			try {
+				pstmt = con.prepareStatement(DELETE_SQL);
+				pstmt.setString(1, mvo.getId());
+				count = pstmt.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				cp.dbClose(con, pstmt);
+			}
+			return (count > 0) ? true : false;
+		}
+
+
+
+	}

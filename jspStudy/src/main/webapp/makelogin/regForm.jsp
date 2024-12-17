@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>회원가입</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script language="javascript" src="loginscript.js"></script>
-<script src="https://kit.fontawesome.com/6498553759.js" async
+<meta charset="UTF-8">
+<title>회원 가입</title>
+<link rel="stylesheet" href="regform.css" />
+<script src="regForm.js"></script>
+<script src="https://kit.fontawesome.com/6498553759.js"
 	crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,225 +14,176 @@
 	href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap"
 	rel="stylesheet">
 <style type="text/css">
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "Jua", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-a {
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-
-header>nav {
-	height: 150px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 5px;
-	background-color: white;
+main {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 15px;
-}
-
-div.nav_futlogo {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	font-size: 15px;
-}
-
-nav>ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-}
-
-div.nav_futlogo i {
-	color: rgb(0, 0, 0);
-	font-size: 32px;
-	margin: 5px;
-}
-.bun{
-width: 70px;
-height: 50px;
-}
-.epl{
-width: 50px;
-height: 50px;
-}
-.sea{
-width: 50px;
-height: 50px;
-}
-.la{
-width: 50px;
-height: 50px;
-}
-div.nav_futlogo a:hover {
-	color: blue;
-}
-
-ul.nav_menu {
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 24px;
-}
-
-ul.nav_menu li {
-	padding: 10px 40px;
-	font-size: 10px;
-}
-
-ul.nav_menu li a i {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-ul.nav_menu li a:hover {
-	color: blue;
-}
-
-ul.nav_icon {
-	list-style-type: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-ul.nav_icon a {
-	font-size: 12px;
-	padding: 10px;
-}
-
-ul.nav_icon a:hover {
-	color: blue;
-}
-
-i {
-	font-size: 35px;
-}
-
-.dropdown {
-	position: relative;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: white;
-	min-width: 150px;
-	z-index: 1;
-}
-
-div.dropdown-content a {
-	display: block;
-	padding: 14px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
 }
 </style>
+
 </head>
-<body onload="onLoad()">
+<body>
 	<header>
-		<nav>
-			<div class="nav_futlogo">
-				<a href="#"><i class="fa-solid fa-futbol"></i></a> <a href="#">메인메뉴</a>
+		<nav class="nav_naver">
+			<div class="dropdown1">
+				<button onclick="myFunction()" class="dropbtn1">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div id="myDropdown" class="dropdown-content1">
+					<a href="#home">공지사항</a> <a href="#about">고객센터</a> <a
+						href="#contact">게시판</a>
+				</div>
 			</div>
-			<div>
-				<ul class="nav_menu">
-					<li><a href="#"><img src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"alt="laliga" class="la"><br><span>LALIGA</span></a></li>
-					<li><a href="#"><img src="./media/pl-main-logo.png"alt="laliga" class="epl"></i><br><span>EPL</span></i></a></li>
-					<li><a href="#"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"><br><span>BUNDES</span></a></li>
-					<li><a href="#"><img src="./media/Serie_A_logo_2022.svg.png"alt="laliga" class="sea"></i><br><span>SERIE</span></a></li>
-				</ul>
+			<div class="nav_naver_font">
+				<a class="naver_logo" href="#"><i
+					class="fa-solid fa-basket-shopping"></i></a> <a class="sport_logo"
+					href="#">CART</a> <a class="sport_logo" href="#">MYPAGE</a>
 			</div>
+		</nav>
+		<nav class="top_menu">
+			<div class="header-logo">
+				<i class="fa-solid fa-futbol"></i> <a href="#">KICK OFF</a>
+			</div>
+			<ul class="header-menu">
+				<li class="dropdown"><a href="#" class="dropbtn"><img
+						src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"
+						alt="laliga" class="la"></img></a>
+					<div class="dropdown-content">
+						<a href="#">바르셀로나</a> <a href="#">레알 마드리드</a> <a href="#">ATM</a>
+					</div></li>
+				<li class="dropdown"><a href="#" class="dropbtn"><img
+						src="./media/pl-main-logo.png" alt="laliga" class="epl"></img></a>
+					<div class="dropdown-content">
+						<a href="#">맨체스터 시티</a> <a href="#">첼시</a> <a href="#">아스날</a> <a
+							href="#">맨체스터 유나이티드</a> <a href="#">토트넘</a>
+					</div></li>
+				<li class="dropdown"><a href="#" class="dropbtn"><img
+						src="./media/bundesliga-logo.png" alt="laliga" class="bun"></img></a>
+					<div class="dropdown-content">
+						<a href="#">바이에르 뮌헨</a> <a href="#">도르트문트</a>
 
+					</div></li>
+				<li class="dropdown"><a href="#" class="dropbtn"><img
+						src="./media/Serie_A_logo_2022.svg.png" alt="laliga" class="bun"></img></a>
+					<div class="dropdown-content">
+						<a href="#">인테르</a> <a href="#">AC밀란</a>
 
-			<ul class="nav_icon">
-				<li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
-				<li><a href="#"><i class="fa-solid fa-question"></i></a></li>
-				<li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+					</div></li>
+			</ul>
+
+			<ul class="header-icons">
+				<li><a href="login.jsp">LOGIN</a></li>
 			</ul>
 		</nav>
-
 	</header>
+	<!-- 헤더 부분 끝 -->
 	<main>
-		<form method="post" action="regProc.jsp" class="regForm">
-			<table border="1">
-				<tr>
-					<td colspan="2" align="center">회원 가입 입력</td>
-				</tr>
-				<tr>
-					<td align="center">아이디 :</td>
-					<td><input type="text" id="id" /> <input type="button"
-						value="중복확인" onClick="idCheck()" /><span></span></td>
-				</tr>
-				<tr>
-					<td align="center">패스워드 :</td>
-					<td><input type="password" id="pwd" /><br> <span></span></td>
-				</tr>
-				<tr>
-					<td align="center">패스워드 확인:</td>
-					<td><input type="password" id="pwd2" /><span></span></td>
-				</tr>
-				<tr>
-					<td align="center">이름 :</td>
-					<td><input type="text" id="name" /><span></span></td>
-				</tr>
-				<tr>
-					<td align="center">전화번호 :</td>
-					<td><select id="phone1">
-							<option value="010">010</option>
-					</select> - <input type="text" id="phone2" size="5" /> - <input type="text"
-						id="phone3" size="5" /></td>
-				</tr>
-				<tr>
-					<td align="center">이메일 :</td>
-					<td><input type="email" id="email" /></td>
-				</tr>
-				<tr>
-					<td align="center">생년월일</td>
-					<td><input type="date" id="birthday" id="birthday"></td>
-				</tr>
-				<tr>
-					<td align="center">우편번호 :</td>
-					<td><input type="text" id="zipcode" /> <input type="button"
-						value="찾기" onClick="zipCheck()" /></td>
-				</tr>
-				<tr>
-					<td align="center">주소 :</td>
-					<td><input type="text" id="address1" size="50" /></td>
-				</tr>
-				<tr>
-					<td align="center">상세주소 :</td>
-					<td><input type="text" id="address2" size="30" /></td>
-				</tr>
-				<tr>
-					<td colspan="2" align="center"><input type="submit"
-						value="회원가입" onClick="" />&nbsp;&nbsp; <input type="reset"
-						value="다시입력" /></td>
-				</tr>
-			</table>
-		</form>
-	</main>
+		<!-- 네이버 회원가입 화면-->
+		<!-- 레이아웃 구성 -->
+
+		<!-- 컨테이너 레이아웃 -->
+		<div>
+			<!-- 가운데 레이아웃 -->
+			<div>
+				<!-- 로고 레이아웃 -->
+				<div id="logo-container">
+					
+				</div>
+
+				<!-- 컨테이너 레이아웃 -->
+				<div id="container">
+					<!-- 아이디 레이아웃 -->
+					<div class="content">
+						<div class="input-label">아이디</div>
+						<div class="inline">
+							<input class="input-style" type="text" />
+						</div>
+					</div>
+					<br />
+
+					<!-- 비밀번호 레이아웃 -->
+					<div class="content">
+						<div class="input-label">비밀번호</div>
+						<div class="inline">
+							<input class="input-style" type="password" />
+						</div>
+					</div>
+					<br />
+
+					<!-- 비밀번호 확인 레이아웃 -->
+					<div class="content">
+						<div class="input-label">비밀번호 확인</div>
+						<div class="inline">
+							<input class="input-style" type="password" />
+						</div>
+					</div>
+					<br />
+
+					<!-- 이름 레이아웃-->
+					<div class="content">
+						<div class="input-label">이름</div>
+						<div class="inline">
+							<input class="input-style" type="text" />
+						</div>
+					</div>
+					<br />
+
+					<!-- 생년월일 레이아웃-->
+					<div class="content">
+						<div class="input-label">생년월일</div>
+						<div class="flex">
+							<!-- stlye display 요소를 inline으로 적용해서 바꿔줌-->
+							<div class="inline">
+							<input type="date" name="birthday" id="birthday">
+						</div>
+						</div>
+					</div>
+					<br />
+
+						<div class="content">
+							<div class="input-label">이메일</div>
+							<div class="inline">
+							<input class="input-style" type="text" />
+						</div>
+					</div>
+					<br />
+						<div class="content">
+							<div class="input-label">우편번호</div>
+							<div class="inline">
+							<input class="input-style" type="text" name="zipcode"/>
+						<input type="button" value="찾기" onClick="zipCheck()" />
+						</div>
+					</div>
+					<br />
+						<div class="content">
+							<div class="input-label">주소</div>
+							<div class="inline">
+							<input class="input-style" type="text" />
+						</div>
+					</div>
+					<br />
+						<div class="content">
+							<div class="input-label">상세주소</div>
+							<div class="inline">
+							<input class="input-style" type="text" />
+						</div>
+					</div>
+					<br />
+					<!-- 버튼 레이아웃 -->
+					<div class="content">
+						<div class="inline">
+							<button class="join-button">가입하기</button>
+						</div>
+					</div>
+				</div>
+				<br />
+			</div>
+		</div>
+</body>
+
+</html>
+
+</main>
+
 </body>
 </html>

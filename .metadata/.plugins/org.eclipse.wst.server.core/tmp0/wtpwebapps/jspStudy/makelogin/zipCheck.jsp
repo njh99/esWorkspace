@@ -76,7 +76,7 @@ if (check.equals("n") == true) {
  %></td>
 			</tr>
 			<tr>
-				<td align="center"><a href="javascript:this.close();">닫기</a></td>
+				<td align="center"><a href="javascript:this.close(); ">닫기</a></td>
 			</tr>
 		</table>
 	</main>

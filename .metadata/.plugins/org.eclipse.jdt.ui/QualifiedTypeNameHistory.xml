@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="co.kh.dev352.signup.model.SignupVO"/>
     <fullyQualifiedTypeName name="co.kh.dev.tempmember.model.TempMemberVO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="co.kh.dev352.common.ConnectionPool"/>
     <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
@@ -24,4 +23,22 @@
     <fullyQualifiedTypeName name="co.kh.dev.mvc.action.Action"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.control.ActionForward"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.Action"/>
+    <fullyQualifiedTypeName name="co.kh.dev.common.ConnectionPool"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.indexAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.RegFormAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.IdCheckAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.model.StudentDAO"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.model.ZipCodeVO"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.ZipCheckAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.RegProcAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.LoginFormAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.LoginProcAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.model.StudentVO"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.LogoutAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.student.action.ModifyFormAction"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

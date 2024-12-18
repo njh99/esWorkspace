@@ -1,7 +1,6 @@
+
 <%@page import="co.kh.dev.makelogin.model.MakeLoginDAO"%>
 <%@page import="co.kh.dev.makelogin.model.MakeLoginVO"%>
-<%@page import="co.kh.dev.memberone.model.StudentVO"%>
-<%@page import="co.kh.dev.memberone.model.StudentDAO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1. 사용자정보를 가져온다 -->
 <!-- 2. CURD -->
@@ -9,10 +8,10 @@
 request.setCharacterEncoding("UTF-8");
 String id = request.getParameter("id");
 
-MakeLoginVO svo = new MakeLoginVO();
-svo.setId(id);
+MakeLoginVO mvo = new MakeLoginVO();
+mvo.setId(id);
 MakeLoginDAO mdao = new MakeLoginDAO();
-boolean flag = mdao.selectIdCheck(svo);
+boolean flag = mdao.selectIdCheck(mvo);
 %>
 <!DOCTYPE html>
 <html>

@@ -12,8 +12,7 @@
   <context-param>
     <param-name>name</param-name>
     <param-value>dong jin</param-value>
- </context-param>
-  
+  </context-param>
   <servlet>
     <servlet-name>visitInsert</servlet-name>
     <servlet-class>co.kh.dev352.bbs.VisitInsert</servlet-class>
@@ -56,37 +55,20 @@
     <servlet-name>loginCheckServlet</servlet-name>
     <url-pattern>/loginCheckServlet.do</url-pattern>
   </servlet-mapping>
-  <!-- 에러 처리 코드 -->
- <!--  <error-page>
-  <error-code>404</error-code>
-  <location>/error/error404.jsp</location>
-  </error-page>
-  <error-page>
-  <error-code>500</error-code>
-  <location>/error/error500.jsp</location>
-  </error-page> -->
-   <resource-ref>
- <description>ConnectionPool</description>
- 		<res-ref-name>jdbc/myOracle</res-ref-name>
- 		<res-type>javax.sql.DataSource</res-type>
- 		<res-auth>Container</res-auth>
- </resource-ref>
-  
+  <resource-ref>
+    <description>ConnectionPool</description>
+    <res-ref-name>jdbc/myOracle</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <servlet>
+    <description></description>
+    <display-name>ControlServlet</display-name>
+    <servlet-name>ControlServlet</servlet-name>
+    <servlet-class>co.kh.dev.mvc.control.ControlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControlServlet</servlet-name>
+    <url-pattern>/ControlServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

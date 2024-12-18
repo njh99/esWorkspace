@@ -6,7 +6,7 @@
 <!-- 2. CURD -->
 <%
 StudentDAO tmdao = new StudentDAO();
-ArrayList<TempMemberVO> templist = tmdao.selectDB(); // DB에서 사용자 목록 가져오기
+/* ArrayList<TempMemberVO> templist = ; // DB에서 사용자 목록 가져오기 */
 int counter = 0;
 %>
 <!-- 3. 화면설계(자바코드(x) -> jsp service 진행) -->
@@ -34,30 +34,6 @@ int counter = 0;
 			<td><strong>JOB</strong></td>
 		</tr>
 <%
-      for( TempMemberVO data: templist){
-       
-            
- %>
-		<tr>
-			<td><%= data.getId() %></td>
-			<td><%= data.getPasswd() %></td>
-			<td><%= data.getName() %></td>
-			<td><%= data.getMemNum1() %></td>
-			<td><%= data.getMemNum2() %></td>
-			<td><%= data.geteMail() %></td>
-			<td><%= data.getPhone() %></td>
-			<td><%= data.getZipcode() %></td>
-			<td><%= data.getAddress() %></td>
-			<td><%= data.getJob() %></td>
-			<%
-            counter++;
-         }//end for
      
- %>
-		</tr>
-	</table>
-	<br></br> total records :
-	<%= counter %>
-
-</body>
-</html>
+       
+ 

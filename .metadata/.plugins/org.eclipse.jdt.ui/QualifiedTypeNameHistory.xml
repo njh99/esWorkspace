@@ -11,7 +11,17 @@
     <fullyQualifiedTypeName name="co.kh.dev352.common.DBUtility"/>
     <fullyQualifiedTypeName name="co.kh.dev.memberone.model.ZipCodeVO"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.MakeLoginVO"/>
     <fullyQualifiedTypeName name="co.kh.dev.memberone.model.StudentVO"/>
     <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.ZipCodeVO"/>
+    <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.MakeLoginVO"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="co.kh.dev.mvc.control.ActionForward"/>
+    <fullyQualifiedTypeName name="co.kh.dev.mvc.action.IndexAction"/>
+    <fullyQualifiedTypeName name="co.kh.dev.mvc.control.ActionFactory"/>
+    <fullyQualifiedTypeName name="co.kh.dev.mvc.action.Action"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>

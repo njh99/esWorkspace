@@ -16,7 +16,13 @@ String id = (String) session.getAttribute("id");
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/01ba7af47f.js" crossorigin="anonymous"></script>
-
+<style type="text/css">
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+</style>
 </head>
 
 <body>
@@ -177,8 +183,8 @@ String id = (String) session.getAttribute("id");
       
       <div class="nav_naver_font">
           <a class="naver_logo" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a class="sport_logo" href="#">CART</a>
-          <a class="sport_logo" href="#">MYPAGE</a>
+          <a class="sport_logo" href="#">CART |</a>
+          <a class="sport_logo" href="mypage.jsp">MYPAGE |</a>
           <a class="sport_logo" href="#">LOGOUT</a>
       </div>
         </nav>

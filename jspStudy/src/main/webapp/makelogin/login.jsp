@@ -164,8 +164,8 @@ align-items: center;
 		<div class="login-wrapper">
 			<form method="post" action="loginProc.jsp" id="login-form">
 			<h2>Login</h2>
-				<input type="text" name="userName" placeholder="ID"> <input
-					type="password" name="userPassword" placeholder="Password">
+				<input type="text" name="id" placeholder="ID"> <input
+					type="password" name="pass1" placeholder="Password">
 				<label for="remember-check"> </label> <input type="submit"
 					value="Login"> <input type="button" value="회원가입"
 					onClick="javascript:window.location='regForm.jsp'">

@@ -4,18 +4,18 @@
 <%
 request.setCharacterEncoding("UTF-8");
 String id = request.getParameter("id");
-String pass = request.getParameter("pass");
+String pass1 = request.getParameter("pass1");
 MakeLoginDAO mdao = new MakeLoginDAO();
 MakeLoginVO mvo = new MakeLoginVO();
 mvo.setId(id);
-mvo.setPass(pass);
+mvo.setPass1(pass1);
 int check = mdao.selectLoginCheck(mvo);
 %>
 <%
 if (check == 1) {//로그인 성공
 	session.setAttribute("id", id);
-	session.setAttribute("pass", pass);
-	response.sendRedirect("login.jsp");
+	session.setAttribute("pass1", pass1);
+	response.sendRedirect("mainhomepage.jsp");
 } else if (check == 0) {//아이디는 있는데 비밀번호 오류
 %>
 <script>

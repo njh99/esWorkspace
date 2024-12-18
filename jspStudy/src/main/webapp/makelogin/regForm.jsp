@@ -20,7 +20,50 @@ main {
 	align-items: center;
 }
 </style>
+<script type="text/javascript">
+//아이디 체크
+function idCheck(id) {
+	let value = document.regForm.id.value;
+	if (value === "") {
+		alert("아이디를 입력해 주세요.");
+		document.regForm.id.focus();
+	} else {
 
+		url = "idCheck.jsp?id=" + value;
+		window.open(url, "post", "width=500,height=350");
+	}
+
+
+}
+
+//주소체크
+function zipCheck() {
+	url = "zipCheck.jsp?check=y";
+	window.open(url, "post", "toolbar=no ,width=500 ,height=300 ,directories = no, status = yes, scrollbars = yes, menubar = no");
+}
+
+//동 체크
+function dongCheck() {
+	let value = document.zipForm.dong.value;
+	if (value === "") {
+		alert("00동을 입력해주세요.");
+		document.zipForm.dong.focus();
+		return;
+	}
+	document.zipForm.submit();
+
+
+}
+
+//주소내영을 불러주는 윈도우창 각 요소에 저장
+function sendAddress(zipcode, sido, gugun, dong, bunji) {
+	var address = sido + " " + gugun + " " + dong + " " + bunji;
+	opener.document.regForm.zipcode.value = zipcode;
+	opener.document.regForm.address1.value = address1;
+	self.close();
+}
+
+</script>
 </head>
 <body>
 	<header>
@@ -78,6 +121,7 @@ main {
 	</header>
 	<!-- 헤더 부분 끝 -->
 	<main>
+	<form method="post" action="regProc.jsp" name="regForm">
 		<!-- 네이버 회원가입 화면-->
 		<!-- 레이아웃 구성 -->
 
@@ -89,14 +133,14 @@ main {
 				<div id="logo-container">
 					
 				</div>
-
 				<!-- 컨테이너 레이아웃 -->
 				<div id="container">
 					<!-- 아이디 레이아웃 -->
 					<div class="content">
 						<div class="input-label">아이디</div>
 						<div class="inline">
-							<input class="input-style" type="text" />
+							<input class="input-style" type="text" name="id" />
+							<input type="button" value="중복확인" onClick="idCheck()" />
 						</div>
 					</div>
 					<br />
@@ -105,7 +149,7 @@ main {
 					<div class="content">
 						<div class="input-label">비밀번호</div>
 						<div class="inline">
-							<input class="input-style" type="password" />
+							<input class="input-style" type="password" name="pass1"/>
 						</div>
 					</div>
 					<br />
@@ -114,7 +158,7 @@ main {
 					<div class="content">
 						<div class="input-label">비밀번호 확인</div>
 						<div class="inline">
-							<input class="input-style" type="password" />
+							<input class="input-style" type="password"name="pass2" />
 						</div>
 					</div>
 					<br />
@@ -123,67 +167,62 @@ main {
 					<div class="content">
 						<div class="input-label">이름</div>
 						<div class="inline">
-							<input class="input-style" type="text" />
+							<input class="input-style" type="text"name="name"/>
 						</div>
 					</div>
 					<br />
-
-					<!-- 생년월일 레이아웃-->
+					<!-- 이름 레이아웃-->
 					<div class="content">
-						<div class="input-label">생년월일</div>
-						<div class="flex">
-							<!-- stlye display 요소를 inline으로 적용해서 바꿔줌-->
-							<div class="inline">
-							<input type="date" name="birthday" id="birthday">
-						</div>
+						<div class="input-label">전화번호</div>
+						<div class="inline">
+							<input class="input-style" type="text"name="phone" />
 						</div>
 					</div>
 					<br />
-
+				
 						<div class="content">
 							<div class="input-label">이메일</div>
 							<div class="inline">
-							<input class="input-style" type="text" />
+							<input class="input-style" type="text" name="email"/>
 						</div>
 					</div>
 					<br />
 						<div class="content">
-							<div class="input-label">우편번호</div>
+							<div class="input-label">우편번호  <input type="button" value="찾기" onClick="zipCheck()" /></div>
 							<div class="inline">
 							<input class="input-style" type="text" name="zipcode"/>
-						<input type="button" value="찾기" onClick="zipCheck()" />
+						
 						</div>
 					</div>
 					<br />
 						<div class="content">
 							<div class="input-label">주소</div>
 							<div class="inline">
-							<input class="input-style" type="text" />
+							<input class="input-style" type="text" name="address1"/>
 						</div>
 					</div>
 					<br />
 						<div class="content">
 							<div class="input-label">상세주소</div>
 							<div class="inline">
-							<input class="input-style" type="text" />
+							<input class="input-style" type="text" name="address2"/>
 						</div>
 					</div>
 					<br />
 					<!-- 버튼 레이아웃 -->
 					<div class="content">
 						<div class="inline">
-							<button class="join-button">가입하기</button>
+							<button class="join-button" onclick="inputCheck()">가입하기</button>
 						</div>
 					</div>
 				</div>
 				<br />
 			</div>
 		</div>
-</body>
-
-</html>
-
+</form>
 </main>
-
 </body>
+
 </html>
+
+

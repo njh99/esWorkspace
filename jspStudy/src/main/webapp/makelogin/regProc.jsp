@@ -6,10 +6,10 @@
 <% request.setCharacterEncoding("utf-8");
 MakeLoginDAO mdao = new MakeLoginDAO();
  %>
- <jsp:useBean id="svo" class="co.kh.dev.makelogin.model.MakeLoginVO" />
- <jsp:setProperty name="svo" property="*" />
+ <jsp:useBean id="mvo" class="co.kh.dev.makelogin.model.MakeLoginVO" />
+ <jsp:setProperty name="mvo" property="*" />
  <% 
-boolean flag = mdao.insertDB(svo);
+boolean flag = mdao.insertDB(mvo);
  %>
 <!DOCTYPE html>
 <!-- 3. 화면설계 -->

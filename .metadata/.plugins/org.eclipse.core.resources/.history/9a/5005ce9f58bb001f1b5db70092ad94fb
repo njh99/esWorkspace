@@ -1,0 +1,17 @@
+
+<%@page import="java.net.URLEncoder"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+	Cookie cookie = new Cookie(URLEncoder.encode("name", "njh"));
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

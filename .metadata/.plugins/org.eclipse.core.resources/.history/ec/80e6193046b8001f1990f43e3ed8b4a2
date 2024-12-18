@@ -1,0 +1,201 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log in</title>
+<style type="text/css">
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Jua", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+header>nav {
+	height: 150px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+}
+
+div.nav_futlogo {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 15px;
+}
+
+nav>ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div.nav_futlogo i {
+	color: rgb(0, 0, 0);
+	font-size: 32px;
+	margin: 5px;
+}
+.bun{
+width: 70px;
+height: 50px;
+}
+.epl{
+width: 50px;
+height: 50px;
+}
+.sea{
+width: 50px;
+height: 50px;
+}
+.la{
+width: 50px;
+height: 50px;
+}
+div.nav_futlogo a:hover {
+	color: blue;
+}
+
+ul.nav_menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+}
+
+ul.nav_menu li {
+	padding: 10px 40px;
+	font-size: 10px;
+}
+
+ul.nav_menu li a i {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.nav_menu li a:hover {
+	color: blue;
+}
+
+ul.nav_icon {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.nav_icon a {
+	font-size: 12px;
+	padding: 10px;
+}
+
+ul.nav_icon a:hover {
+	color: blue;
+}
+
+i {
+	font-size: 35px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 150px;
+	z-index: 1;
+}
+
+div.dropdown-content a {
+	display: block;
+	padding: 14px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+</style>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/6498553759.js" async
+	crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap"
+	rel="stylesheet">
+</head>
+<body>
+<header>
+		<nav>
+			<div class="nav_futlogo">
+				<a href="#"><i class="fa-solid fa-futbol"></i></a> <a href="#">메인메뉴</a>
+			</div>
+			<div>
+				<ul class="nav_menu">
+					<li><a href="#"><img src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"alt="laliga" class="la"><br><span>LALIGA</span></a></li>
+					<li><a href="#"><img src="./media/pl-main-logo.png"alt="laliga" class="epl"></i><br><span>EPL</span></i></a></li>
+					<li><a href="#"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"><br><span>BUNDES</span></a></li>
+					<li><a href="#"><img src="./media/Serie_A_logo_2022.svg.png"alt="laliga" class="sea"></i><br><span>SERIE</span></a></li>
+				</ul>
+			</div>
+
+
+			<ul class="nav_icon">
+				<li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+				<li><a href="#"><i class="fa-solid fa-question"></i></a></li>
+				<li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<main>
+		<form method="post" action="#">
+			<table width="300" border="1">
+				<tr>
+					<td colspan="2" align="center">회원 로그인</td>
+				</tr>
+				<tr>
+					<td align="right" width="100">아이디 :</td>
+					<td width="200">&nbsp;&nbsp; <input type="text" name="id"
+						size="20" /></td>
+				</tr>
+				<tr>
+					<td align="right" width="100">비밀번호 :</td>
+					<td width="200">&nbsp;&nbsp; <input type="password"
+						name="pass" size="20" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="로그인" />&nbsp;&nbsp; <input type="button" value="회원가입"
+						onClick="javascript:window.location='regForm.jsp'" /></td>
+				</tr>
+			</table>
+		</form>
+	</main>
+</body>
+</html>

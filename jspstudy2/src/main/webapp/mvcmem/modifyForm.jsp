@@ -1,20 +1,11 @@
-<%@page import="co.kh.dev.memberone.model.StudentDAO"%>
-<%@page import="co.kh.dev.memberone.model.StudentVO"%>
+
+<%@page import="co.kh.dev.student.model.StudentVO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1. 클라이언트가 보내준 사용자 정보를 가져온다(request). 그 이외에 정보를 가져오는 건 3가지(session,application,request)세션 정보를 가져온다 -->
 <%
-String id = (String) session.getAttribute("id");
-String pass = (String) session.getAttribute("pass");
+StudentVO svo = (StudentVO)request.getAttribute("svo");
 %>
 <!-- 2. CURD -->
-<%
-StudentVO svo = new StudentVO();
-svo.setId(id);
-StudentDAO sdao = new StudentDAO();
-
-svo = sdao.selectOneDB(svo);
-%>
-
 <!-- 3. 화면설계 -->
 <html>
 <head>
@@ -25,7 +16,7 @@ svo = sdao.selectOneDB(svo);
 </head>
 <body>
 <main>
-	<form name="regForm" method="post" action="modifyProc.jsp">
+	<form name="regForm" method="post" action="modifyProc.do">
 		<table border="1">
 			<tr>
 				<td colspan="2" align="center">회원 수정 정보 입력</td>
@@ -78,7 +69,7 @@ svo = sdao.selectOneDB(svo);
 			<tr>
 				<td colspan="2" align="center">
 					<input type="button"value="정보수정" onClick="updateCheck()" />&nbsp;&nbsp; 
-					<input type="button" value="취소"onClick="javascript:window.location='login.jsp'" /></td>
+					<input type="button" value="취소"onClick="javascript:window.location='login.do'" /></td>
 			</tr>
 		</table>
 	</form>

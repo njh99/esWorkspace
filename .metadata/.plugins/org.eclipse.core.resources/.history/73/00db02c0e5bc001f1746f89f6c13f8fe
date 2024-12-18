@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h4>http://localhost:8080/mvc/test.do</h4>
+<h4> <a href="/jspStudy/index.do></a> </h4>
+out.println("<html>");
+	            out.println("<head><title>Error</title></head>");
+	            out.println("<body>");
+	            out.println("<h4>올바른 요청이 아닙니다!</h4>");
+	            out.println("");
+	            out.println("</body>");
+	            out.println("</html>");
+</body>
+</html>

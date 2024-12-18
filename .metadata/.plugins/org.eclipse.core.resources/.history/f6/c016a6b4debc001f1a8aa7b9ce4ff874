@@ -1,0 +1,18 @@
+package co.kh.dev.mvc.control;
+
+//싱글톤 방식
+public class ActionFactory {
+	private static ActionFactory factory;
+
+	public static synchronized ActionFactory getInstancee() {
+		if(factory == null) {
+			factory = new ActionFactory();
+		}
+		return factory;
+	}
+	
+	private ActionFactory() {
+		
+	}
+	
+}

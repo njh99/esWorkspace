@@ -1,0 +1,74 @@
+	//indicator 클릭하면 해당된 페이지로 이동
+
+	indicatorArray.forEach((indicator, index) => {
+		indicator.addEventListener("mouseenter", () => clearInterval(timerID));
+		indicator.addEventListener("mouseleave", startTimer);
+		indicator.addEventListener("click", (event) => {
+			event.preventDefault();
+			gotoslide(index);
+		});
+	});
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+	if (!event.target.matches(".dropbtn1")) {
+		var dropdowns = document.getElementsByClassName("dropdown-content1");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains("show")) {
+				openDropdown.classList.remove("show");
+			}
+		}
+	}
+}
+
+//아이디 체크
+function idCheck(id) {
+	let value = document.regForm.id.value;
+	if (value === "") {
+		alert("아이디를 입력해 주세요.");
+		document.regForm.id.focus();
+	} else {
+
+		url = "idCheck.jsp?id=" + value;
+		window.open(url, "post", "width=500,height=350");
+	}
+
+
+}
+
+//주소체크
+function zipCheck() {
+	url = "zipCheck.jsp?check=y";
+	window.open(url, "post", "toolbar=no ,width=500 ,height=300 ,directories = no, status = yes, scrollbars = yes, menubar = no");
+}
+
+//동 체크
+function dongCheck() {
+	let value = document.zipForm.dong.value;
+	if (value === "") {
+		alert("00동을 입력해주세요.");
+		document.zipForm.dong.focus();
+		return;
+	}
+	document.zipForm.submit();
+
+
+}
+
+//주소내영을 불러주는 윈도우창 각 요소에 저장
+function sendAddress(zipcode, sido, gugun, dong, bunji) {
+	var address = sido + " " + gugun + " " + dong + " " + bunji;
+	opener.document.regForm.zipcode.value = zipcode;
+	opener.document.regForm.address1.value = address;
+	self.close();
+}
+
+

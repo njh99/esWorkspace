@@ -1,0 +1,28 @@
+package co.kh.dev.student.control;
+
+import co.kh.dev.student.action.Action;
+
+//싱글톤 방식
+public class ActionFactory {
+	private static ActionFactory factory;
+
+	public static synchronized ActionFactory getInstancee() {
+		if(factory == null) {
+			factory = new ActionFactory();
+		}
+		return factory;
+	}
+	
+	private ActionFactory() {
+		
+	}
+	
+	public Action getAction(String cmd) {
+		Action action = null;
+		if(cmd.equals("/index.do")) {
+		//	action = new IndexAction();
+		}
+		return action;
+	}
+	
+}

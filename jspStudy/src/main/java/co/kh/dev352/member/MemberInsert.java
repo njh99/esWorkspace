@@ -42,8 +42,7 @@ public class MemberInsert extends HttpServlet {
 				PreparedStatement pstmt = null;
 				boolean successFlag = false;// 오라클에서 작업할 쿼리문 사용할게 하는 명령문
 				// db.properties 에서 id, pw 가져오기
-				// 아이디 비밀번호 체크
-				// SELECT PWD FROM ACCOUNT WHERE ID = ?;
+
 				String MEMBER_INSERT = "INSERT INTO MEMBER VALUES(?, ?, ?,?,?,?) ";
 				// 1. jdbc driver load 2. connection
 				try {

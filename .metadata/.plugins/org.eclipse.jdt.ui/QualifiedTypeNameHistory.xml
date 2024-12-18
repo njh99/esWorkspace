@@ -1,27 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="co.kh.dev352.signup.model.SignupVO"/>
-    <fullyQualifiedTypeName name="co.kh.dev.tempmember.model.TempMemberVO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="co.kh.dev352.common.ConnectionPool"/>
-    <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
-    <fullyQualifiedTypeName name="javax.naming.Context"/>
-    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-    <fullyQualifiedTypeName name="co.kh.dev352.common.DBUtility"/>
-    <fullyQualifiedTypeName name="co.kh.dev.memberone.model.ZipCodeVO"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="co.kh.dev.memberone.model.StudentVO"/>
-    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
-    <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.ZipCodeVO"/>
-    <fullyQualifiedTypeName name="co.kh.dev.makelogin.model.MakeLoginVO"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="co.kh.dev.mvc.control.ActionForward"/>
-    <fullyQualifiedTypeName name="co.kh.dev.mvc.action.IndexAction"/>
-    <fullyQualifiedTypeName name="co.kh.dev.mvc.control.ActionFactory"/>
-    <fullyQualifiedTypeName name="co.kh.dev.mvc.action.Action"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

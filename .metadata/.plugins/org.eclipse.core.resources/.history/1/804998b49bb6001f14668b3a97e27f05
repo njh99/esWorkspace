@@ -1,7 +1,0 @@
-package co.kh.dev352;
-
-public class SimpleVO {
-	private String message1;
-	private String message2;
-	
-}

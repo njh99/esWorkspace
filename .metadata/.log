@@ -7754,3 +7754,8 @@ java.io.FileNotFoundException: C:\dev\ecWorkspace\jspStudy\src\main\webapp\WEB-I
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.queue(DecorationScheduler.java:410)
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:388)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2024-12-18 17:51:08.632
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-12-18 17:51:08.632
+!MESSAGE The project description file (.project) for 'jspstudy2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

@@ -112,7 +112,7 @@ align-items: center;
    <nav class="top_menu">
     <div class="header-logo">
       <i class="fa-solid fa-futbol"></i>
-      <a href="#">KICK OFF</a>
+      <a href="mainhomepage.jsp">KICK OFF</a>
     </div>
     <ul class="header-menu">
       <li class="dropdown">

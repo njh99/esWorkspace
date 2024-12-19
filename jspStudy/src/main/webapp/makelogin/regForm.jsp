@@ -85,7 +85,7 @@ function sendAddress(zipcode, sido, gugun, dong, bunji) {
 		</nav>
 		<nav class="top_menu">
 			<div class="header-logo">
-				<i class="fa-solid fa-futbol"></i> <a href="#">KICK OFF</a>
+				<i class="fa-solid fa-futbol"></i> <a href="mainhomepage.jsp">KICK OFF</a>
 			</div>
 			<ul class="header-menu">
 				<li class="dropdown"><a href="#" class="dropbtn"><img

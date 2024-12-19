@@ -50,7 +50,7 @@ align-items: center;
    <nav class="top_menu">
     <div class="header-logo">
       <i class="fa-solid fa-futbol"></i>
-      <a href="#">KICK OFF</a>
+      <a href="mainhomepage.jsp">KICK OFF</a>
     </div>
     <ul class="header-menu">
       <li class="dropdown">
@@ -185,13 +185,13 @@ align-items: center;
           <a class="naver_logo" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
           <a class="sport_logo" href="#">CART |</a>
           <a class="sport_logo" href="mypage.jsp">MYPAGE |</a>
-          <a class="sport_logo" href="#">LOGOUT</a>
+          <a class="sport_logo" href="logout.jsp">LOGOUT</a>
       </div>
         </nav>
    <nav class="top_menu">
     <div class="header-logo">
       <i class="fa-solid fa-futbol"></i>
-      <a href="#">KICK OFF</a>
+      <a href="mainhomepage.jsp">KICK OFF</a>
     </div>
     <ul class="header-menu">
       <li class="dropdown">
@@ -232,8 +232,7 @@ align-items: center;
 
     <ul class="header-icons">
       <li>
-        <a href="login.jsp" 
-				onclick="window.open(this.href, '_blank', 'width=500, height=350'); return false;">환영합니다</a>
+        <a href="logout.jsp" >환영합니다</a>
       </li>
     </ul>
 	</nav>

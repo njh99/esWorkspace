@@ -1,20 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1. 사용자 정보를 가져온다. 세션 정보를 가져온다 -->
-
 <%
-request.setCharacterEncoding("UTF-8"); 
-
+boolean flag = (Boolean)request.getAttribute("flag");
 %>
- <jsp:useBean id="sdao" class="co.kh.dev.memberone.model.StudentDAO"/>
- <jsp:useBean id="svo" class="co.kh.dev.memberone.model.StudentVO">
-     <jsp:setProperty name="svo" property="*"/>
- </jsp:useBean>
- <!-- CURD -->
- <%
- String id = (String)session.getAttribute("id");
- svo.setId(id);
- boolean flag = sdao.updateDB(svo);
- %>
 <!-- 화면설계 -->
  <html>
  <head><title>Update Process</title></head>
@@ -25,7 +13,6 @@ request.setCharacterEncoding("UTF-8");
  	<main>
 <%
 	if(flag == true){
-		session.setAttribute("pass",svo.getPass());
 %>
 		<!--  -->
  		<p>

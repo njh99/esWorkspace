@@ -14,14 +14,14 @@ public class ModifyFormAction implements Action {
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		 StudentDAO dao = StudentDAO.getInstance(); 
-		 HttpSession session = request.getSession();
-		 String loginID = (String)session.getAttribute("loginID");
-		 StudentVO vo = new StudentVO();
-		 vo.setId(loginID);
-		 StudentVO svo = dao.selectOneDB(vo);
-		 request.setAttribute("svo", svo);
-		 
-		 return new ActionForward("/mvcmem/modifyForm.jsp",false);
+		request.setCharacterEncoding("UTF-8");
+		HttpSession session = request.getSession();
+		String id = (String) session.getAttribute("id");
+		StudentVO svo = new StudentVO();
+		svo.setId(id);
+		StudentDAO dao = StudentDAO.getInstance();
+		svo = dao.selectOneDB(svo);
+		request.setAttribute("svo", svo);
+		return new ActionForward("/mvcmem/modifyForm.jsp", false);
 	}
 }

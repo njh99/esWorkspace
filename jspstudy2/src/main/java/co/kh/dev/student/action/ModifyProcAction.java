@@ -17,7 +17,7 @@ public class ModifyProcAction implements Action {
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		 request.setCharacterEncoding("EUC-KR");
+		 request.setCharacterEncoding("UTF-8");
 		 HttpSession session = request.getSession();
 		 String id = (String) session.getAttribute("id");
 		 StudentDAO dao = StudentDAO.getInstance();
@@ -32,8 +32,10 @@ public class ModifyProcAction implements Action {
 		 request.getParameter("address1"),
 		 request.getParameter("address2"));
 		 boolean flag = dao.updateDB(vo);
+		 if(flag == true) {
+			session.setAttribute("pass",request.getParameter("pass"));
+		 }
 		 request.setAttribute("flag", flag);
 		 return new ActionForward("/mvcmem/modifyProc.jsp", false);
 	}
-
 }

@@ -16,7 +16,7 @@ public class DBUtility {
 	public static Connection dbCon() {
 		Connection con = null;
 		//1. db.properties file에서 id,pw,url 가져오기
-		String filePath = "C:\\dev\\ecWorkspace\\jspStudy\\src\\main\\java\\db.properties";
+		String filePath = "C:\\dev\\ecWorkspace\\jspStudy3\\src\\main\\java\\com\\kh\\edu\\common\\db.properties";
 		Properties pt = new Properties();
 		try {
 			pt.load(new FileReader(filePath));

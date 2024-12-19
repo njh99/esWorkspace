@@ -135,6 +135,14 @@ window.onclick = function(event) {
 				openDropdown.classList.remove("show");
 			}
 		}
+
+
+
+
+
 	}
 }
-
+function opendelete() {
+url = "deleteForm.jsp"
+window.open(url,"post","width=500,height=350");
+}

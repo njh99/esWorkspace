@@ -44,7 +44,6 @@ align-items: center;
       <div class="nav_naver_font">
           <a class="naver_logo" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
           <a class="sport_logo" href="#">CART</a>
-          <a class="sport_logo" href="#">MYPAGE</a>
       </div>
         </nav>
    <nav class="top_menu">
@@ -178,13 +177,14 @@ align-items: center;
     <a href="#home">공지사항</a>
     <a href="#about">고객센터</a>
     <a href="#contact">게시판</a>
+    <a href="modifyForm.jsp">개인정보수정</a>
+    <a href="deleteForm.jsp" onclick="window.open(this.href, '_blank', 'width=500, height=150'); return false;">회원탈퇴</a>
   </div>
 </div>
       
       <div class="nav_naver_font">
           <a class="naver_logo" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
           <a class="sport_logo" href="#">CART |</a>
-          <a class="sport_logo" href="mypage.jsp">MYPAGE |</a>
           <a class="sport_logo" href="logout.jsp">LOGOUT</a>
       </div>
         </nav>

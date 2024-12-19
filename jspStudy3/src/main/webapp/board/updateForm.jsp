@@ -1,18 +1,9 @@
-<%@page import="co.kh.dev.boardone.model.BoardVO"%>
-<%@page import="co.kh.dev.boardone.model.BoardDAO"%>
+<%@page import="com.kh.edu.board.model.BoardVO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ include file="view/color.jsp"%>
 <%
-request.setCharacterEncoding("UTF-8");
-int num = Integer.parseInt(request.getParameter("num"));
-String pageNum = request.getParameter("pageNum");
-BoardVO vo = new BoardVO(); 
-vo.setNum(num); 
-%>
-<%
-try {
-	BoardDAO bdao = BoardDAO.getInstance();
-	BoardVO article = bdao.selectBoardOneDB(vo); 
+String pageNum = (String)request.getAttribute("pageNum");
+BoardVO article = (BoardVO)request.getAttribute("article");
 %>
 <html>
 <head>
@@ -24,7 +15,7 @@ try {
 <body bgcolor="<%=bodyback_c%>">
 	<main>
 		<b>글수정</b> <br>
-		<form method="post" name="writeform" action="updateProc.jsp?pageNum=<%=pageNum%>"
+		<form method="post" name="writeform" action="updatePro.do?pageNum=<%=pageNum%>"
 			onsubmit="return writeSave()">
 			<input type="hidden" name="num" value="<%=article.getNum()%>">
 			<table width="400" border="1" cellspacing="0" cellpadding="0"
@@ -60,15 +51,11 @@ try {
 					<td colspan=2 bgcolor="<%=value_c%>" align="center">
 						<input type="submit" value="글수정">
 						<input type="reset" value="다시작성">
-						<input type="button" value="목록보기" 	onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
+						<input type="button" value="목록보기" 	onclick="document.location.href='list.do?pageNum=<%=pageNum%>'">
 					</td>
 				</tr>
 			</table>
 		</form>
 	</main>
-	<%
-	} catch (Exception e) {
-	}
-	%>
-</body>
+	</body>
 </html>

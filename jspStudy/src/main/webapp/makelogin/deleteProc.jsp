@@ -1,3 +1,4 @@
+<%@page import="co.kh.dev.memberone.model.StudentVO"%>
 <%@page import="co.kh.dev.memberone.model.StudentDAO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1. 사용자 정보를 가져온다. 세션 정보를 가져온다 -->
@@ -8,18 +9,18 @@ String pass = request.getParameter("pass");
 <!-- CURD -->
 <%
 String id = (String) session.getAttribute("id");
-String spass = (String) session.getAttribute("pass");
 StudentDAO sdao = new StudentDAO();
-
+StudentVO svo = new StudentVO();
+svo.setId(id);
 boolean flag = sdao.deleteDB(svo);
-if (check == 1) {
+if (flag == true) {
 	session.invalidate();
+
 %>
 <!-- 화면설계 -->
-<jsp:useBean id="dao" class="memberone.StudentDAO" />
 <html>
 <head>
-<title>회원탈퇴</title>
+	<title>회원탈퇴</title>
 </head>
 <meta http-equiv="Refresh" content="3;url=login.jsp">
 <body>
@@ -28,15 +29,15 @@ if (check == 1) {
 			3초후에 로그인 페이지로 이동합니다
 		</font>
 	</main>
-	<%
-	} else {
-	%>
+<%
+}else {
+%>
 	<script>
 		alert("비밀번호가 맞지 않습니다");
 		history.go(-1);
 	</script>
-	<%
-	}
-	%>
+<%
+}
+%>
 </body>
 </html>

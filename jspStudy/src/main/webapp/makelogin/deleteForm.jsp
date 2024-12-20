@@ -1,44 +1,39 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ include file="view/color.jsp"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+  int num = Integer.parseInt(request.getParameter("num"));
+  String pageNum = request.getParameter("pageNum");
+%>
 <html>
 <head>
-<title>회원탈퇴</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script language="javascript" src="script.js"></script>
-<!-- 내부 자바 스크립트 -->
-<script language="javascript">
-	function begin() {
-		document.myForm.pass.focus();
-	}
-	function checkPass() {
-		if (!document.myForm.pass.value) {
-			alert("비밀번호를 입력하지 않았습니다");
-			document.myForm.pass.focus();
-			return false;
-		}
-	}
-</script>
+<title>게시판</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="script.js?timestamp=<%= System.currentTimeMillis() %>"></script>
 </head>
-<body onload="begin()">
-<main>
-	<form name="myForm" method="post" action="deleteProc.jsp" onsubmit="return checkPass()">
-		<table width="260" border="1" align="center">
-			<tr>
-				<td colspan="2" align="center"><b>회원 탈퇴</b></td>
-			</tr>
-			<tr>
-				<td width="150">
-					<b>비밀번호입력</b></td>
-				<td width="110">
-					<input type="password" name="pass" size="15"></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input type="submit"value="회원탈퇴">
-					<input type="button" value="취  소" onclick="javascript:window.location='login.jsp'"></td>
-			</tr>
-		</table>
-	</form>
-	</main>
+<body bgcolor="<%=bodyback_c%>">
+<main><b>글삭제</b>
+<br></br>
+<form method="POST" name="delForm" action="deleteProc.jsp?pageNum=<%=pageNum%>" onsubmit="return deleteSave()"> 
+ <input type="hidden" name="num" value="<%=num%>">
+ <table border="1" align="center" cellspacing="0" cellpadding="0"	 width="360">
+  <tr height="30">
+     <td align=center  bgcolor="<%=value_c%>">
+       <b>비밀번호를 입력해 주세요.</b></td>
+  </tr>
+  <tr height="30">
+     <td align=center >비밀번호 :   
+       <input type="password" name="pass" size="8" maxlength="12">
+      </td>
+ </tr>
+ <tr height="30">
+    <td align=center bgcolor="<%=value_c%>">
+      <input type="submit" value="글삭제" >
+      <input type="button" value="글목록"	onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">     
+   </td>
+ </tr>  
+</table> 
+</form>
+</main>
 </body>
-</html>
+</html> 

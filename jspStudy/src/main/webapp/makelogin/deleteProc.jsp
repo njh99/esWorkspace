@@ -1,43 +1,28 @@
-<%@page import="co.kh.dev.memberone.model.StudentVO"%>
-<%@page import="co.kh.dev.memberone.model.StudentDAO"%>
+<%@page import="co.kh.dev.boardone.model.BoardDAO"%>
+<%@page import="co.kh.dev.boardone.model.BoardVO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
-<!-- 1. 사용자 정보를 가져온다. 세션 정보를 가져온다 -->
 <%
-request.setCharacterEncoding("UTF-8");
+request.setCharacterEncoding("utf-8");
+int num = Integer.parseInt(request.getParameter("num"));
+String pageNum = request.getParameter("pageNum");
 String pass = request.getParameter("pass");
 %>
-<!-- CURD -->
 <%
-String id = (String) session.getAttribute("id");
-StudentDAO sdao = new StudentDAO();
-StudentVO svo = new StudentVO();
-svo.setId(id);
-boolean flag = sdao.deleteDB(svo);
+BoardVO vo = new BoardVO(); 
+vo.setNum(num);
+vo.setPass(pass);
+BoardDAO bdao = BoardDAO.getInstance();
+boolean flag = bdao.deleteDB(vo);
 if (flag == true) {
-	session.invalidate();
-
 %>
-<!-- 화면설계 -->
-<html>
-<head>
-	<title>회원탈퇴</title>
-</head>
-<meta http-equiv="Refresh" content="3;url=login.jsp">
-<body>
-	<main>
-		<font size="5" face="바탕체"> 회원정보가 삭제되었습니다<br></br> 안녕히 가세요 ! ㅠ.ㅠ<br></br>
-			3초후에 로그인 페이지로 이동합니다
-		</font>
-	</main>
+<meta http-equiv="Refresh" content="0;url=list.jsp?pageNum=<%=pageNum%>">
 <%
-}else {
+} else {
 %>
-	<script>
-		alert("비밀번호가 맞지 않습니다");
-		history.go(-1);
-	</script>
+<script language="JavaScript">
+	alert("비밀번호가 맞지 않습니다");
+	history.go(-1);
+</script>
 <%
 }
 %>
-</body>
-</html>

@@ -13,6 +13,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/01ba7af47f.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+	function addToCart(){
+		if (confirm('상품을 장바구니에 추가하시겠습니까?')) {
+			document.addForm.submit();
+		} else {
+			document.addForm.reset();
+		}
+	}
+</script>
 </head>
 <body>
 <header>
@@ -98,14 +107,17 @@
 			<div class="col-md-6">
 			<!-- 이미지 업로드: width:100%으로 설정했지만 사이즈를 확인하면서 적당하게 변경 -->
 			<img src="./media/<%=product.getFilename()%>"
-				style="width: 100% ">
+				style="width: 400px; height: 200px; ">
 				<h3><%=product.getName() %></h3>
 				<p><b>브랜드</b> : <%=product.getCompany() %>
 				<p><b>재고</b> : <%=product.getStock()%>
 				<p><b>사이즈</b> : <%=product.getSize() %>
 				<h4><%=product.getPrice() %>원</h4>
-				<p><a href="#" class="btn btn-info">상품주문&raquo;</a>
-				<a href="products.jsp" class="btn btn-secondary">상품목록&raquo;</a>
+				<p><form name="addForm" action="./addCart.jsp?id=<%=product.getName() %>" method="post">
+						<a href="addCart.jsp" class="btn btn-info" onclick="addToCart()">상품주문&raquo;</a>
+						<a href="./cart.jsp" class="btn btn-warning">장바구니&raquo;</a>
+						<a href="./products.jsp" class="btn btn-secondary">상품목록&raquo;</a>
+			</form>
 			</div>
 		</div>
 		<hr>

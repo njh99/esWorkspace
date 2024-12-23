@@ -7,7 +7,36 @@ public class ProductVO {
 	private String size;
 	private int stock;
 	private String filename;
+	private int quantity;
 	
+	public int getQuantity() {
+		return quantity;
+	}
+
+
+
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+
+
+
+	public ProductVO(String name, int price, String company, String size, int stock, String filename, int quantity) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.company = company;
+		this.size = size;
+		this.stock = stock;
+		this.filename = filename;
+		this.quantity = quantity;
+	}
+
+
+
+
 	public String getFilename() {
 		return filename;
 	}

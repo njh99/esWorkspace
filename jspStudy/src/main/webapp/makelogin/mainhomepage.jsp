@@ -42,8 +42,8 @@ align-items: center;
 </div>
       
       <div class="nav_naver_font">
-          <a class="naver_logo" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a class="sport_logo" href="#">CART</a>
+          <a class="naver_logo" href="cart.jsp"><i class="fa-solid fa-basket-shopping"></i></a>
+          <a class="sport_logo" href="cart.jsp">CART</a>
       </div>
         </nav>
    <nav class="top_menu">
@@ -139,13 +139,13 @@ align-items: center;
     </div>
     <!-- PC ë°°ë1 -->
 <div class="floBanPc1 hidden-md hidden-sm hidden-xs">
-  <a href="ë§í¬ì£¼ì" target="_blank">
+  <a href="lisp.jsp" target="_blank">
     <img src="./media/btn_side_phone.png" width="80px;" height="80px;">
   </a>
 </div>
 <!-- PC ë°°ë2 -->
 <div class="floBanPc2 hidden-md hidden-sm hidden-xs">
-  <a href="" target="_blank">
+  <a href="cart.jsp" target="_blank">
     <img src="./media/btn_side_cart.png" width="80px;" height="80px;">
   </a>
 </div>
@@ -183,8 +183,8 @@ align-items: center;
 </div>
       
       <div class="nav_naver_font">
-          <a class="naver_logo" href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a class="sport_logo" href="#">CART |</a>
+          <a class="naver_logo" href="cart.jsp"><i class="fa-solid fa-basket-shopping"></i></a>
+          <a class="sport_logo" href="cart.jsp">CART |</a>
           <a class="sport_logo" href="logout.jsp">LOGOUT</a>
       </div>
         </nav>
@@ -281,13 +281,13 @@ align-items: center;
     </div>
     <!-- PC ë°°ë1 -->
 <div class="floBanPc1 hidden-md hidden-sm hidden-xs">
-  <a href="ë§í¬ì£¼ì" target="_blank">
+  <a href="list.jsp" target="_blank">
     <img src="./media/btn_side_phone.png" width="80px;" height="80px;">
   </a>
 </div>
 <!-- PC ë°°ë2 -->
 <div class="floBanPc2 hidden-md hidden-sm hidden-xs">
-  <a href="" target="_blank">
+  <a href="cart.jsp" target="_blank">
     <img src="./media/btn_side_cart.png" width="80px;" height="80px;">
   </a>
 </div>

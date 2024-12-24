@@ -47,7 +47,7 @@
 		list.add(goods);
 	}
 
-	response.sendRedirect("product.jsp?id=" + name);
+	response.sendRedirect("products.jsp?id=" + name);
 %>
 <!DOCTYPE html>
 <html>

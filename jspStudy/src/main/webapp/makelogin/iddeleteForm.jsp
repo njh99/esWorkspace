@@ -21,7 +21,7 @@
 </head>
 <body onload="begin()">
 <main>
-	<form name="myForm" method="post" action="deleteProc.jsp" onsubmit="return checkPass()">
+	<form name="myForm" method="post" action="iddeleteProc.jsp" onsubmit="return checkPass()">
 		<table width="260" border="1" align="center">
 			<tr>
 				<td colspan="2" align="center"><b>회원 탈퇴</b></td>

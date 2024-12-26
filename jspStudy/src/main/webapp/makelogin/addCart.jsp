@@ -5,7 +5,7 @@
 <%
 	String name = request.getParameter("name");
 	if (name == null || name.trim().equals("")) {
-		response.sendRedirect("mainhomepage.jsp");
+		response.sendRedirect("products.jsp");
 		return;
 	}
 

@@ -55,34 +55,34 @@ align-items: center;
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"alt="laliga" class="la"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=바르샤%20홈%20유니폼">바르셀로나</a>
-          <a href="product.jsp?name=레알%20홈%20유니폼">레알 마드리드</a>
-          <a href="product.jsp?name=ATM%20홈%20유니폼">ATM</a>
+          <a href="product.jsp?name=바르샤 홈 유니폼">바르셀로나</a>
+          <a href="product.jsp?name=레알 홈 유니폼">레알 마드리드</a>
+          <a href="product.jsp?name=ATM 홈 유니폼">ATM</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/pl-main-logo.png"alt="laliga" class="epl"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=맨시티%20홈%20유니폼">맨체스터 시티</a>
-          <a href="product.jsp?name=첼시%20홈%20유니폼">첼시</a>
-          <a href="product.jsp?name=아스날%20어웨이%20유니폼">아스날</a>
-          <a href="product.jsp?name=맨유%20어웨이%20유니폼">맨체스터 유나이티드</a>
-          <a href="product.jsp?name=토트넘%20홈%20유니폼">토트넘</a>
+          <a href="product.jsp?name=맨시티 홈 유니폼">맨체스터 시티</a>
+          <a href="product.jsp?name=첼시 홈 유니폼">첼시</a>
+          <a href="product.jsp?name=아스날 어웨이 유니폼">아스날</a>
+          <a href="product.jsp?name=맨유 어웨이 유니폼">맨체스터 유나이티드</a>
+          <a href="product.jsp?name=토트넘 홈 유니폼">토트넘</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=바이언%20어웨이%20유니폼">바이에르 뮌헨</a>
-          <a href="product.jsp?name=도르트문트%20홈%20유니폼">도르트문트</a>
+          <a href="product.jsp?name=바이언 어웨이 유니폼">바이에르 뮌헨</a>
+          <a href="product.jsp?name=도르트문트 홈 유니폼">도르트문트</a>
 
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/Serie_A_logo_2022.svg.png"alt="laliga" class="bun"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=인테르%20홈%20유니폼">인테르</a>
-          <a href="product.jsp?name=AC밀란%20홈%20유니폼">AC밀란</a>
+          <a href="product.jsp?name=인테르 홈 유니폼">인테르</a>
+          <a href="product.jsp?name=AC밀란 홈 유니폼">AC밀란</a>
           
         </div>
       </li>
@@ -101,9 +101,9 @@ align-items: center;
   <section onload="carousel();">
     <div class="slideshow">
       <div class="slideshow_slides">
-        <a href="product.jsp?name=첼시%20홈%20유니폼"><img src="./media/e6849145-1156-430c-be71-b082bdf50769__1600X612.jpg" alt="1" /></a>
-        <a href="product.jsp?name=토트넘%20홈%20유니폼"><img src="./media/002-retail-1263-retro-christmas-jumpers-shop-categorydesktop-2160x720-comp.jpg" alt="2" /></a>
-        <a href="product.jsp?name=바르샤%20홈%20유니폼"><img src="./media/EA018846.jpg" alt="3" /></a>
+        <a href="product.jsp?name=첼시 홈 유니폼"><img src="./media/e6849145-1156-430c-be71-b082bdf50769__1600X612.jpg" alt="1" /></a>
+        <a href="product.jsp?name=토트넘 홈 유니폼"><img src="./media/002-retail-1263-retro-christmas-jumpers-shop-categorydesktop-2160x720-comp.jpg" alt="2" /></a>
+        <a href="product.jsp?name=바르샤 홈 유니폼"><img src="./media/EA018846.jpg" alt="3" /></a>
         <a href="#"><img src="./media/캡처.PNG" alt="4" /></a>
       </div>
       <div class="slideshow_nav">
@@ -124,17 +124,17 @@ align-items: center;
 
     <div><h1>Week Best</h1></div>
     <div class="best_item">
-    	<a href="product.jsp?name=레알%20홈%20유니폼"><img src="./media/다운로드1.jpg">  <span>레알마드리드 홈 유니폼<br> <del>189000원</del> 139000원</span></a>
-    	<a href="product.jsp?name=ATM%20홈%20유니폼"><img src="./media/다운로드11.jpg">  <span>AT마드리드 홈 유니폼<br> <del>123000원</del> 119000원</span> </a>
-    	<a href="product.jsp?name=토트넘%20홈%20유니폼"><img src="./media/다운로드2.jpg">  <span>토트넘 홋스퍼 홈 유니폼<br> <del>150000원</del> 140000원</span></a>
-    	<a href="product.jsp?name=바이언%20어웨이%20유니폼"><img src="./media/다운로드9.jpg">  <span>바이에르 뮌헨 어웨이 유니폼<br> <del>150000원</del> 141000원</span></a>
+    	<a href="product.jsp?name=레알 홈 유니폼"><img src="./media/다운로드1.jpg">  <span>레알마드리드 홈 유니폼<br> <del>189000원</del> 139000원</span></a>
+    	<a href="product.jsp?name=ATM 홈 유니폼"><img src="./media/다운로드11.jpg">  <span>AT마드리드 홈 유니폼<br> <del>123000원</del> 119000원</span> </a>
+    	<a href="product.jsp?name=토트넘 홈 유니폼"><img src="./media/다운로드2.jpg">  <span>토트넘 홋스퍼 홈 유니폼<br> <del>150000원</del> 140000원</span></a>
+    	<a href="product.jsp?name=바이언 어웨이 유니폼"><img src="./media/다운로드9.jpg">  <span>바이에르 뮌헨 어웨이 유니폼<br> <del>150000원</del> 141000원</span></a>
     </div>
     <div><h1>What's new</h1></div>
     <div class ="new_item">
-			<a href="product.jsp?name=아스날%20어웨이%20유니폼"><img src="./media/다운로드5.jpg">  <span>아스날 어웨이 유니폼<br>  167000원</span></a>
-			<a href="product.jsp?name=맨유%20어웨이%20유니폼"><img src="./media/다운로드6.jpg">  <span>맨체스터 유나이티드 어웨이 유니폼<br>  178000원</span></a>
-			<a href="product.jsp?name=맨시티%20홈%20유니폼"><img src="./media/다운로드7.jpg">  <span>맨체스터 시티 홈 유니폼<br>  159000원</span></a>
-			<a href="product.jsp?name=AC밀란%20홈%20유니폼"><img src="./media/다운로드8.jpg">  <span>AC밀란 홈 유니폼<br> 136000원</span></a>
+			<a href="product.jsp?name=아스날 어웨이 유니폼"><img src="./media/다운로드5.jpg">  <span>아스날 어웨이 유니폼<br>  167000원</span></a>
+			<a href="product.jsp?name=맨유 어웨이 유니폼"><img src="./media/다운로드6.jpg">  <span>맨체스터 유나이티드 어웨이 유니폼<br>  178000원</span></a>
+			<a href="product.jsp?name=맨시티 홈 유니폼"><img src="./media/다운로드7.jpg">  <span>맨체스터 시티 홈 유니폼<br>  159000원</span></a>
+			<a href="product.jsp?name=AC밀란 홈 유니폼"><img src="./media/다운로드8.jpg">  <span>AC밀란 홈 유니폼<br> 136000원</span></a>
     	
     </div>
     <!-- PC ë°°ë1 -->
@@ -197,34 +197,34 @@ align-items: center;
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"alt="laliga" class="la"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=바르샤%20홈%20유니폼">바르셀로나</a>
-          <a href="product.jsp?name=레알%20홈%20유니폼">레알 마드리드</a>
-          <a href="product.jsp?name=ATM%20홈%20유니폼">ATM</a>
+          <a href="product.jsp?name=바르샤 홈 유니폼">바르셀로나</a>
+          <a href="product.jsp?name=레알 홈 유니폼">레알 마드리드</a>
+          <a href="product.jsp?name=ATM 홈 유니폼">ATM</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/pl-main-logo.png"alt="laliga" class="epl"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=맨시티%20홈%20유니폼">맨체스터 시티</a>
-          <a href="product.jsp?name=첼시%20홈%20유니폼">첼시</a>
-          <a href="product.jsp?name=아스날%20어웨이%20유니폼">아스날</a>
-          <a href="product.jsp?name=맨유%20어웨이%20유니폼">맨체스터 유나이티드</a>
-          <a href="product.jsp?name=토트넘%20홈%20유니폼">토트넘</a>
+          <a href="product.jsp?name=맨시티 홈 유니폼">맨체스터 시티</a>
+          <a href="product.jsp?name=첼시 홈 유니폼">첼시</a>
+          <a href="product.jsp?name=아스날 어웨이 유니폼">아스날</a>
+          <a href="product.jsp?name=맨유 어웨이 유니폼">맨체스터 유나이티드</a>
+          <a href="product.jsp?name=토트넘 홈 유니폼">토트넘</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=바이언%20어웨이%20유니폼">바이에르 뮌헨</a>
-          <a href="product.jsp?name=도르트문트%20홈%20유니폼">도르트문트</a>
+          <a href="product.jsp?name=바이언 어웨이 유니폼">바이에르 뮌헨</a>
+          <a href="product.jsp?name=도르트문트 홈 유니폼">도르트문트</a>
 
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/Serie_A_logo_2022.svg.png"alt="laliga" class="bun"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=인테르%20홈%20유니폼">인테르</a>
-          <a href="product.jsp?name=AC밀란%20홈%20유니폼">AC밀란</a>
+          <a href="product.jsp?name=인테르 홈 유니폼">인테르</a>
+          <a href="product.jsp?name=AC밀란 홈 유니폼">AC밀란</a>
           
         </div>
       </li>
@@ -243,9 +243,9 @@ align-items: center;
   <section onload="carousel();">
     <div class="slideshow">
       <div class="slideshow_slides">
-        <a href="product.jsp?name=첼시%20홈%20유니폼"><img src="./media/e6849145-1156-430c-be71-b082bdf50769__1600X612.jpg" alt="1" /></a>
-        <a href="product.jsp?name=토트넘%20홈%20유니폼"><img src="./media/002-retail-1263-retro-christmas-jumpers-shop-categorydesktop-2160x720-comp.jpg" alt="2" /></a>
-        <a href="product.jsp?name=바르샤%20홈%20유니폼"><img src="./media/EA018846.jpg" alt="3" /></a>
+        <a href="product.jsp?name=첼시 홈 유니폼"><img src="./media/e6849145-1156-430c-be71-b082bdf50769__1600X612.jpg" alt="1" /></a>
+        <a href="product.jsp?name=토트넘 홈 유니폼"><img src="./media/002-retail-1263-retro-christmas-jumpers-shop-categorydesktop-2160x720-comp.jpg" alt="2" /></a>
+        <a href="product.jsp?name=바르샤 홈 유니폼"><img src="./media/EA018846.jpg" alt="3" /></a>
         <a href="#"><img src="./media/캡처.PNG" alt="4" /></a>
       </div>
       <div class="slideshow_nav">
@@ -266,17 +266,17 @@ align-items: center;
 
     <div><h1>Week Best</h1></div>
     <div class="best_item">
-    	<a href="product.jsp?name=레알%20홈%20유니폼"><img src="./media/다운로드1.jpg">  <span>레알마드리드 홈 유니폼<br> <del>189000원</del> 139000원</span></a>
-    	<a href="product.jsp?name=ATM%20홈%20유니폼"><img src="./media/다운로드11.jpg">  <span>AT마드리드 홈 유니폼<br> <del>123000원</del> 119000원</span> </a>
-    	<a href="product.jsp?name=토트넘%20홈%20유니폼"><img src="./media/다운로드2.jpg">  <span>토트넘 홋스퍼 홈 유니폼<br> <del>150000원</del> 140000원</span></a>
-    	<a href="product.jsp?name=바이언%20어웨이%20유니폼"><img src="./media/다운로드9.jpg">  <span>바이에르 뮌헨 어웨이 유니폼<br> <del>150000원</del> 141000원</span></a>
+    	<a href="product.jsp?name=레알 홈 유니폼"><img src="./media/다운로드1.jpg">  <span>레알마드리드 홈 유니폼<br> <del>189000원</del> 139000원</span></a>
+    	<a href="product.jsp?name=ATM 홈 유니폼"><img src="./media/다운로드11.jpg">  <span>AT마드리드 홈 유니폼<br> <del>123000원</del> 119000원</span> </a>
+    	<a href="product.jsp?name=토트넘 홈 유니폼"><img src="./media/다운로드2.jpg">  <span>토트넘 홋스퍼 홈 유니폼<br> <del>150000원</del> 140000원</span></a>
+    	<a href="product.jsp?name=바이언 어웨이 유니폼"><img src="./media/다운로드9.jpg">  <span>바이에르 뮌헨 어웨이 유니폼<br> <del>150000원</del> 141000원</span></a>
     </div>
     <div><h1>What's new</h1></div>
     <div class ="new_item">
-			<a href="product.jsp?name=아스날%20어웨이%20유니폼"><img src="./media/다운로드5.jpg">  <span>아스날 어웨이 유니폼<br>  167000원</span></a>
-			<a href="product.jsp?name=맨유%20어웨이%20유니폼"><img src="./media/다운로드6.jpg">  <span>맨체스터 유나이티드 어웨이 유니폼<br>  178000원</span></a>
-			<a href="product.jsp?name=맨시티%20홈%20유니폼"><img src="./media/다운로드7.jpg">  <span>맨체스터 시티 홈 유니폼<br>  159000원</span></a>
-			<a href="product.jsp?name=AC밀란%20홈%20유니폼"><img src="./media/다운로드8.jpg">  <span>AC밀란 홈 유니폼<br> 136000원</span></a>
+			<a href="product.jsp?name=아스날 어웨이 유니폼"><img src="./media/다운로드5.jpg">  <span>아스날 어웨이 유니폼<br>  167000원</span></a>
+			<a href="product.jsp?name=맨유 어웨이 유니폼"><img src="./media/다운로드6.jpg">  <span>맨체스터 유나이티드 어웨이 유니폼<br>  178000원</span></a>
+			<a href="product.jsp?name=맨시티 홈 유니폼"><img src="./media/다운로드7.jpg">  <span>맨체스터 시티 홈 유니폼<br>  159000원</span></a>
+			<a href="product.jsp?name=AC밀란 홈 유니폼"><img src="./media/다운로드8.jpg">  <span>AC밀란 홈 유니폼<br> 136000원</span></a>
     	
     </div>
     <!-- PC ë°°ë1 -->

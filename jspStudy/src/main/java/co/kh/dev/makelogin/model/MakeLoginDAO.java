@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import co.kh.dev.makelogin.model.MakeLoginVO;
+import co.kh.dev.memberone.model.StudentVO;
 import co.kh.dev.tempmember.model.TempMemberVO;
 import co.kh.dev352.common.ConnectionPool;
 import co.kh.dev352.common.DBUtility;
@@ -154,6 +155,56 @@ public class MakeLoginDAO {
 			}
 			return check;
 		}
+		
+		
+		
+		
+		//정보 수정해서 db로 보내기
+		public Boolean updateDB(MakeLoginVO mvo) {
+			ConnectionPool cp = ConnectionPool.getInstance();
+			Connection con = cp.dbCon();
+			PreparedStatement pstmt = null;
+			int count = 0;
+			try {
+				pstmt = con.prepareStatement(UPDATE_SQL);
+				pstmt.setString(1, mvo.getPass1());
+				pstmt.setString(2, mvo.getPass2());
+				pstmt.setString(3, mvo.getName());
+				pstmt.setString(4, mvo.getPhone());
+				pstmt.setString(5, mvo.getEmail());
+				pstmt.setString(6, mvo.getZipcode());
+				pstmt.setString(7, mvo.getAddress1());
+				pstmt.setString(8, mvo.getAddress2());
+				pstmt.setString(9, mvo.getId());
+				count = pstmt.executeUpdate();
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				cp.dbClose(con, pstmt);
+			}
+			return (count > 0) ? true : false;
+		}
+
+		//회원 정보 삭제
+		public Boolean deleteDB(MakeLoginVO mvo) {
+			ConnectionPool cp = ConnectionPool.getInstance();
+			Connection con = cp.dbCon();
+			PreparedStatement pstmt = null;
+			int count = 0;
+			try {
+				pstmt = con.prepareStatement(DELETE_SQL);
+				pstmt.setString(1, mvo.getId());
+				count = pstmt.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} finally {
+				cp.dbClose(con, pstmt);
+			}
+			return (count > 0) ? true : false;
+		}
+
+
 		/*
 		 * // 수정 public MakeLoginVO selectOneDB(MakeLoginVO mvo) { ConnectionPool cp =
 		 * ConnectionPool.getInstance(); Connection con = cp.dbCon(); PreparedStatement

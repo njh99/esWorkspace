@@ -1,5 +1,5 @@
-<%@page import="co.kh.dev.memberone.model.StudentVO"%>
-<%@page import="co.kh.dev.memberone.model.StudentDAO"%>
+<%@page import="co.kh.dev.makelogin.model.MakeLoginDAO"%>
+<%@page import="co.kh.dev.makelogin.model.MakeLoginVO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!-- 1. 사용자 정보를 가져온다. 세션 정보를 가져온다 -->
 <%
@@ -9,10 +9,10 @@ String pass = request.getParameter("pass");
 <!-- CURD -->
 <%
 String id = (String) session.getAttribute("id");
-StudentDAO sdao = new StudentDAO();
-StudentVO svo = new StudentVO();
-svo.setId(id);
-boolean flag = sdao.deleteDB(svo);
+MakeLoginDAO mdao = new MakeLoginDAO();
+MakeLoginVO mvo = new MakeLoginVO();
+mvo.setId(id);
+boolean flag = mdao.deleteDB(mvo);
 if (flag == true) {
 	session.invalidate();
 

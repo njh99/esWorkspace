@@ -41,7 +41,7 @@
 				</tr>
 				<%				
 					int sum = 0;
-					ArrayList<ProductVO> cartList = (ArrayList<ProductVO>) session.getAttribute("cartlist");
+					ArrayList<ProductVO> cartList = (ArrayList<ProductVO>)session.getAttribute("cartlist");
 					if (cartList == null)
 						cartList = new ArrayList<ProductVO>();
 

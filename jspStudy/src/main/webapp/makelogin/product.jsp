@@ -52,34 +52,34 @@
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/LaLiga_EA_Sports_2023_Vertical_Logo.svg.png"alt="laliga" class="la"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=바르샤%20홈%20유니폼">바르셀로나</a>
-          <a href="product.jsp?name=레알%20홈%20유니폼">레알 마드리드</a>
-          <a href="product.jsp?name=ATM%20홈%20유니폼">ATM</a>
+          <a href="product.jsp?name=바르샤 홈 유니폼">바르셀로나</a>
+          <a href="product.jsp?name=레알 홈 유니폼">레알 마드리드</a>
+          <a href="product.jsp?name=ATM 홈 유니폼">ATM</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/pl-main-logo.png"alt="laliga" class="epl"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=맨시티%20홈%20유니폼">맨체스터 시티</a>
-          <a href="product.jsp?name=첼시%20홈%20유니폼">첼시</a>
-          <a href="product.jsp?name=아스날%20어웨이%20유니폼">아스날</a>
-          <a href="product.jsp?name=맨유%20어웨이%20유니폼">맨체스터 유나이티드</a>
-          <a href="product.jsp?name=토트넘%20홈%20유니폼">토트넘</a>
+          <a href="product.jsp?name=맨시티 홈 유니폼">맨체스터 시티</a>
+          <a href="product.jsp?name=첼시 홈 유니폼">첼시</a>
+          <a href="product.jsp?name=아스날 어웨이 유니폼">아스날</a>
+          <a href="product.jsp?name=맨유 어웨이 유니폼">맨체스터 유나이티드</a>
+          <a href="product.jsp?name=토트넘 홈 유니폼">토트넘</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/bundesliga-logo.png"alt="laliga" class="bun"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=바이언%20어웨이%20유니폼">바이에르 뮌헨</a>
-          <a href="product.jsp?name=도르트문트%20홈%20유니폼">도르트문트</a>
+          <a href="product.jsp?name=바이언 어웨이 유니폼">바이에르 뮌헨</a>
+          <a href="product.jsp?name=도르트문트 홈 유니폼">도르트문트</a>
 
         </div>
       </li>
       <li class="dropdown">
         <a href="#" class="dropbtn"><img src="./media/Serie_A_logo_2022.svg.png"alt="laliga" class="bun"></img></a>
         <div class="dropdown-content">
-          <a href="product.jsp?name=인테르%20홈%20유니폼">인테르</a>
-          <a href="product.jsp?name=AC밀란%20홈%20유니폼">AC밀란</a>
+          <a href="product.jsp?name=인테르 홈 유니폼">인테르</a>
+          <a href="product.jsp?name=AC밀란 홈 유니폼">AC밀란</a>
           
         </div>
       </li>
@@ -113,10 +113,10 @@
 				<p><b>재고</b> : <%=product.getStock()%>
 				<p><b>사이즈</b> : <%=product.getSize() %>
 				<h4><%=product.getPrice() %>원</h4>
-				<p><form name="addForm" action="./addCart.jsp?id=<%=product.getName() %>" method="post">
+				<p><form name="addForm" action="addCart.jsp?name=<%=product.getName()%>" method="post">
 						<a href="addCart.jsp" class="btn btn-info" onclick="addToCart()">상품주문&raquo;</a>
-						<a href="./cart.jsp" class="btn btn-warning">장바구니&raquo;</a>
-						<a href="./products.jsp" class="btn btn-secondary">상품목록&raquo;</a>
+						<a href="cart.jsp" class="btn btn-warning">장바구니&raquo;</a>
+						<a href="products.jsp" class="btn btn-secondary">상품목록&raquo;</a>
 			</form>
 			</div>
 		</div>

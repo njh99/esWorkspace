@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>상품등록페이지</title>
+<script type="text/javascript" src="../makelogin/js/validation.js"></script>
 </head>
 <body>
 	<div class="jumbotron">
@@ -52,7 +53,8 @@
 			</div>
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10">
-					<input type="submit" class="btn btn-primary" value="등록하기">
+					<input type="button" class="btn btn-primary" value="등록하기"
+					onclick="CheckAddProduct()">
 				</div>
 			</div>
 		</form>

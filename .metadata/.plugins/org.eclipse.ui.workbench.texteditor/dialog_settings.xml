@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="%20"/>
 		<item value="svo"/>
 		<item value="Student"/>
 		<item value="STUDENT"/>
@@ -14,6 +15,7 @@
 		<item value="ACCOUNT"/>
 	</list>
 	<list key="replacehistory">
+		<item value=" "/>
 		<item value="mvo"/>
 		<item value="MakeLogin"/>
 		<item value="makelogin"/>

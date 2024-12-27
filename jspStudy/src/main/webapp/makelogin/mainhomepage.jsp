@@ -101,7 +101,7 @@ align-items: center;
   <section onload="carousel();">
     <div class="slideshow">
       <div class="slideshow_slides">
-        <a href="product.jsp?name=첼시 홈 유니폼"><img src="./media/e6849145-1156-430c-be71-b082bdf50769__1600X612.jpg" alt="1" /></a>
+        <a href="product.jsp?name=첼시 홈 유니폼"><img class=chelsea src="./media/e6849145-1156-430c-be71-b082bdf50769__1600X612.jpg" alt="1"/></a>
         <a href="product.jsp?name=토트넘 홈 유니폼"><img src="./media/002-retail-1263-retro-christmas-jumpers-shop-categorydesktop-2160x720-comp.jpg" alt="2" /></a>
         <a href="product.jsp?name=바르샤 홈 유니폼"><img src="./media/EA018846.jpg" alt="3" /></a>
         <a href="#"><img src="./media/캡처.PNG" alt="4" /></a>
